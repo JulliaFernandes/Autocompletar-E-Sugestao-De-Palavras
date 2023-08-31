@@ -227,14 +227,14 @@ bool treatments(string &word)
     return false;
 }
 
-void printLevels(Node* root) 
+void printLevels(Node* root, ostream& output) 
 {
     if (!root) {
-        std::cout << "Árvore vazia." << std::endl;
+        output << "Árvore vazia." << endl;
         return;
     }
 
-    std::queue<Node*> q;
+    queue<Node*> q;
     q.push(root);
 
     while (!q.empty()) {
@@ -242,14 +242,14 @@ void printLevels(Node* root)
         for (int i = 0; i < levelSize; ++i) {
             Node* curr = q.front();
             q.pop();
-            std::cout << curr->words.word << " ";
+            output << curr->words.word << " ";
 
             if (curr->left_son)
                 q.push(curr->left_son);
             if (curr->right_son)
                 q.push(curr->right_son);
         }
-        std::cout << std::endl;
+        output << endl;
     }
 }
 
@@ -513,3 +513,37 @@ void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Com
     cout << "--------------------------------------------------" << endl;
 }
 
+void outputFile(const string fileName, FilesInfo info_files)
+{
+    ofstream outputFile(fileName);
+    if (!outputFile.is_open()) {
+        cerr << "Unable to open the file: " << fileName << endl;
+        return;
+    }
+    outputFile << "FILE: " << fileName << endl;
+    if(info_files.wordSelect != ""){
+        outputFile << "WORD \t\t FREQEUNCY" << endl;
+        outputFile << "\t>" << info_files.wordSelect << "\t" << info_files.frequencyWord << endl;
+        outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
+        printLevels(info_files.rootBinaryTree, outputFile);
+        outputFile << "\n\n-----AVL TREE BY LEVEL-----" << endl;
+        printLevels(info_files.rootAVL, outputFile); 
+        outputFile << "\n\n-----HUFFMAN CODES-----" << endl;
+        for(auto entry: info_files.encodedHuffman){
+            outputFile << "WORD: " << entry.first << " CODE: " << entry.second << endl;
+        }
+        outputFile << "---------------------------------------------------------------------------------------" << endl << endl;
+    }
+    else{
+        outputFile << "WORD \t\t FREQEUNCY" << endl;
+        outputFile << "\t>" << info_files.wordSelect << "\t" << "DOESN'T EXIST IN THIS FILE" << endl;
+        outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
+        outputFile << "\t\tNULL" << endl;
+        outputFile << "\n\n-----AVL TREE BY LEVEL-----" << endl;
+        outputFile << "\t\tNULL" << endl;
+        outputFile << "\n\n-----HUFFMAN CODES-----" << endl;
+        outputFile << "\t\tNULL" << endl;
+    }
+    
+
+}

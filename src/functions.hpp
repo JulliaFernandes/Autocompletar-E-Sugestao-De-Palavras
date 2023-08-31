@@ -38,6 +38,8 @@ struct Compare {
 
 
 typedef struct FilesInfo{
+  string wordSelect;
+  int frequencyWord;
   Node *rootBinaryTree;
   Node *rootAVL;
   priority_queue<Node*, vector<Node*>, Compare> fifo;
@@ -60,7 +62,7 @@ void printGlossary(unordered_map<string,WordInfo> glossary);
 
 bool treatments(string &word);
 
-void printLevels(Node* root);
+void printLevels(Node* root, ostream& output = cout);
 
 void getWordsSelect(vector<string>&wordsSelect);
 
@@ -80,5 +82,7 @@ void HuffmanTree(priority_queue<Node*, vector<Node*>, Compare> &fifo);
 void printPreOrder(Node* current_No);
 void buildHuffmanCodes(Node* root, string code, unordered_map<string, string>& huffmanCodes);
 void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, unordered_map<string, string>& encodedHuffman);
+
+void outputFile(const string filename, FilesInfo info_files);
 
 #endif

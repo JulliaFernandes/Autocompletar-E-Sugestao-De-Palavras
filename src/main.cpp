@@ -70,6 +70,7 @@ int main()
 
                 //Para o Codigo de Huffman;
                 string code="";
+                encodedHuffman.clear();
                 HuffmanCode(heap_aux, fifo, code, encodedHuffman);
 
                 
@@ -82,20 +83,29 @@ int main()
 
                 info_files[fileName] = newInfos;
 
-                cout << "\n[ROOT BINARY TREE]" << endl;
-                printLevels(info_files.at(fileName).rootBinaryTree);
-                cout << "\n[ROOT AVL]" << endl;
-                printLevels(info_files.at(fileName).rootAVL);
+                //cout << "\n[ROOT BINARY TREE]" << endl;
+                //printLevels(info_files.at(fileName).rootBinaryTree);
+                //cout << "\n[ROOT AVL]" << endl;
+                //printLevels(info_files.at(fileName).rootAVL);
 
                 cout << "---------------------------FIM ARQUIVO ---------------------------" << endl;
                 
             }
             else{
+                newInfos.frequencyWord = 0;
                 cout << " ------ A PALAVRA: " << wordsSelect[i] << " NÃO SE ENCONTRA NO TEXTO DE NOME: " << fileName << endl;
             }
-            outputFile(fileName, newInfos);
+
+            outputFile(fileName, newInfos, "data/Output.data");
             heap.clear();
+            heap_aux.clear();
             glossary.clear();
+            rootBT = NULL;
+            rootAVL = NULL;
+            encodedHuffman.clear();
+            while (!fifo.empty()) {
+                fifo.pop(); // Remove o elemento do topo da fila
+            }
         }
     }
     //printGlossary(glossaryStopWords);

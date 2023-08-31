@@ -513,15 +513,15 @@ void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Com
     cout << "--------------------------------------------------" << endl;
 }
 
-void outputFile(const string fileName, FilesInfo info_files)
+void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
 {
-    ofstream outputFile(fileName);
+    ofstream outputFile(OutputFinal, ios::app);
     if (!outputFile.is_open()) {
         cerr << "Unable to open the file: " << fileName << endl;
         return;
     }
     outputFile << "FILE: " << fileName << endl;
-    if(info_files.wordSelect != ""){
+    if(info_files.frequencyWord != 0){
         outputFile << "WORD \t\t FREQEUNCY" << endl;
         outputFile << "\t>" << info_files.wordSelect << "\t" << info_files.frequencyWord << endl;
         outputFile << "-----BINARY TREE BY LEVEL-----" << endl;

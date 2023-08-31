@@ -83,6 +83,6 @@ void printPreOrder(Node* current_No);
 void buildHuffmanCodes(Node* root, string code, unordered_map<string, string>& huffmanCodes);
 void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, unordered_map<string, string>& encodedHuffman);
 
-void outputFile(const string filename, FilesInfo info_files);
+void outputFile(const string filename, FilesInfo info_files, string OutputFinal);
 
 #endif

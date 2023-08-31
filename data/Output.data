@@ -1,0 +1,390 @@
+FILE: data/input1.txt
+WORD 		 FREQEUNCY
+	>modo	129
+-----BINARY TREE BY LEVEL-----
+sentido 
+sobre 
+segundo pensamento 
+sistema teoria 
+sujeito 
+condição 
+priori 
+mundo 
+
+
+-----AVL TREE BY LEVEL-----
+sistema 
+segundo condição 
+sentido sobre priori sujeito 
+pensamento mundo teoria 
+
+
+-----HUFFMAN CODES-----
+WORD: sistema CODE: 1111
+WORD: sentido CODE: 1100
+WORD: teoria CODE: 101
+WORD: sujeito CODE: 100
+WORD: condição CODE: 011
+WORD: sobre CODE: 1110
+WORD: mundo CODE: 010
+WORD: priori CODE: 001
+WORD: segundo CODE: 1101
+WORD: pensamento CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input2.txt
+WORD 		 FREQEUNCY
+	>modo	129
+-----BINARY TREE BY LEVEL-----
+sentido 
+segundo 
+sobre sistema 
+pensamento priori 
+mundo sujeito 
+condição teoria 
+
+
+-----AVL TREE BY LEVEL-----
+segundo 
+sentido mundo 
+sobre sistema sujeito 
+pensamento condição priori teoria 
+
+
+-----HUFFMAN CODES-----
+WORD: pensamento CODE: 1111
+WORD: segundo CODE: 1101
+WORD: teoria CODE: 101
+WORD: sujeito CODE: 100
+WORD: priori CODE: 011
+WORD: sobre CODE: 1110
+WORD: mundo CODE: 010
+WORD: condição CODE: 001
+WORD: sentido CODE: 1100
+WORD: sistema CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input3.txt
+WORD 		 FREQEUNCY
+	>modo	134
+-----BINARY TREE BY LEVEL-----
+necessidade 
+importância processo 
+podemos assim 
+melhoria sentido 
+quadros 
+formas 
+sistema 
+
+
+-----AVL TREE BY LEVEL-----
+melhoria 
+formas assim 
+sistema quadros importância processo 
+podemos necessidade sentido 
+
+
+-----HUFFMAN CODES-----
+WORD: necessidade CODE: 1100
+WORD: processo CODE: 100
+WORD: formas CODE: 1110
+WORD: assim CODE: 011
+WORD: podemos CODE: 1101
+WORD: melhoria CODE: 010
+WORD: sistema CODE: 1111
+WORD: sentido CODE: 101
+WORD: quadros CODE: 001
+WORD: importância CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input4.txt
+WORD 		 FREQEUNCY
+	>modo	134
+-----BINARY TREE BY LEVEL-----
+política 
+eleitores 
+metas assim 
+sentido políticas 
+saúde político 
+melhoria 
+atual 
+
+
+-----AVL TREE BY LEVEL-----
+eleitores 
+política saúde 
+metas atual políticas 
+sentido melhoria assim político 
+
+
+-----HUFFMAN CODES-----
+WORD: político CODE: 111
+WORD: eleitores CODE: 1011
+WORD: políticas CODE: 100
+WORD: melhoria CODE: 011
+WORD: política CODE: 1010
+WORD: assim CODE: 010
+WORD: metas CODE: 1100
+WORD: atual CODE: 001
+WORD: sentido CODE: 1101
+WORD: saúde CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input5.txt
+WORD 		 FREQEUNCY
+	>modo	133
+-----BINARY TREE BY LEVEL-----
+aumento 
+desenvolvimento novas 
+melhor ti implantação 
+informações segurança 
+dados utilização 
+
+
+-----AVL TREE BY LEVEL-----
+ti 
+aumento implantação 
+desenvolvimento informações novas segurança 
+melhor dados utilização 
+
+
+-----HUFFMAN CODES-----
+WORD: novas CODE: 1111
+WORD: melhor CODE: 1110
+WORD: desenvolvimento CODE: 1101
+WORD: aumento CODE: 1100
+WORD: implantação CODE: 011
+WORD: segurança CODE: 100
+WORD: dados CODE: 010
+WORD: utilização CODE: 101
+WORD: ti CODE: 001
+WORD: informações CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input6.txt
+WORD 		 FREQEUNCY
+	>modo	132
+-----BINARY TREE BY LEVEL-----
+informações 
+hardware melhor 
+dados implantação 
+aumento segurança 
+assim utilização 
+ti 
+
+
+-----AVL TREE BY LEVEL-----
+aumento 
+informações melhor 
+hardware assim dados segurança 
+ti implantação utilização 
+
+
+-----HUFFMAN CODES-----
+WORD: hardware CODE: 1101
+WORD: informações CODE: 1100
+WORD: ti CODE: 1111
+WORD: assim CODE: 1110
+WORD: utilização CODE: 101
+WORD: implantação CODE: 011
+WORD: segurança CODE: 100
+WORD: dados CODE: 010
+WORD: aumento CODE: 001
+WORD: melhor CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input1.txt
+WORD 		 FREQEUNCY
+	>duas	19
+-----BINARY TREE BY LEVEL-----
+sentido 
+segundo 
+sobre pensamento 
+sistema priori 
+condição 
+mundo sujeito 
+teoria 
+
+
+-----AVL TREE BY LEVEL-----
+sistema 
+sobre condição 
+sentido segundo priori sujeito 
+pensamento mundo teoria 
+
+
+-----HUFFMAN CODES-----
+WORD: sistema CODE: 1111
+WORD: sentido CODE: 1100
+WORD: teoria CODE: 101
+WORD: sujeito CODE: 100
+WORD: sobre CODE: 1101
+WORD: mundo CODE: 011
+WORD: condição CODE: 010
+WORD: priori CODE: 001
+WORD: segundo CODE: 1110
+WORD: pensamento CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input2.txt
+WORD 		 FREQEUNCY
+	>duas	19
+-----BINARY TREE BY LEVEL-----
+sentido 
+segundo 
+sobre sistema 
+pensamento priori 
+mundo sujeito 
+condição teoria 
+
+
+-----AVL TREE BY LEVEL-----
+segundo 
+sentido mundo 
+sobre sistema sujeito 
+pensamento condição priori teoria 
+
+
+-----HUFFMAN CODES-----
+WORD: pensamento CODE: 1111
+WORD: segundo CODE: 1101
+WORD: teoria CODE: 101
+WORD: sujeito CODE: 100
+WORD: priori CODE: 011
+WORD: sobre CODE: 1110
+WORD: mundo CODE: 010
+WORD: condição CODE: 001
+WORD: sentido CODE: 1100
+WORD: sistema CODE: 000
+---------------------------------------------------------------------------------------
+
+FILE: data/input3.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input4.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input5.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input6.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input1.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input2.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input3.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input4.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input5.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL
+FILE: data/input6.txt
+WORD 		 FREQEUNCY
+	>duas	DOESN'T EXIST IN THIS FILE
+-----BINARY TREE BY LEVEL-----
+		NULL
+
+
+-----AVL TREE BY LEVEL-----
+		NULL
+
+
+-----HUFFMAN CODES-----
+		NULL

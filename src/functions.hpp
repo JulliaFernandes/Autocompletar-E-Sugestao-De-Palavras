@@ -50,6 +50,14 @@ typedef struct FilesInfo{
 
 void fillHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& glossary, int k, string word_select);
 
+void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& glossary, int k);
+
+
+void fillHeap1(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo, unordered_map<string, string> &encodedHuffman, FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k); 
+
+void heapify(vector<WordInfo*>& newHeap, int n, int index);
+
+
 bool emptyLine(const string linha);
 
 void readText(string fileName, ifstream &file, unordered_map<string, WordInfo> &glossary, unordered_map<string, WordInfo> &glossaryStopWords);

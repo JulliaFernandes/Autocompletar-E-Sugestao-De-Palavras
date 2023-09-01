@@ -6,6 +6,16 @@ void fillHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& gl
     int num = min(k, static_cast<int>(glossary.size()));
     heap.reserve(num);
     
+    // for(int i=0; i<(int)word_select.size(); i++){
+    //     auto it = glossary.begin();
+    //     for (int j = 0; j < num; ++j) {
+    //         if(it->second.word != word_select){
+    //             heap.push_back(const_cast<WordInfo*>(&it->second));
+    //         }
+    //         ++it;
+    //     }
+    // }
+
 
     auto it = glossary.begin();
     for (int i = 0; i < num; ++i) {
@@ -50,14 +60,261 @@ void fillHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& gl
         ++it;
     }
 
-    int width = 20;
-    cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
-    for (int i = 0; i <(int)heap.size() ; ++i) {
-        cout << i+1 << ") " << "\033[31m" << heap[i]->word << "\033[0m" << ": " << heap[i]->occurrences << endl;
-    }
-    cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+    // int width = 20;
+    // cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+    // for (int i = 0; i <(int)heap.size() ; ++i) {
+    //     cout << i+1 << ") " << "\033[31m" << heap[i]->word << "\033[0m" << ": " << heap[i]->occurrences << endl;
+    // }
+    // cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
 
 }
+
+
+void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& glossary, int k)
+{
+    int num = min(k, static_cast<int>(glossary.size()));
+    heap.reserve(num);
+
+    auto it = glossary.begin();
+    for (int i = 0; i < num; ++i) {
+        //if(it->second.word != word_select[i]){
+            heap.push_back(const_cast<WordInfo*>(&it->second));
+        //}
+        ++it;
+    }
+
+    while(it!=glossary.end()) {
+        //if(it->second.word != word_select){
+            WordInfo* current = const_cast<WordInfo*>(&it->second);
+            if (current->occurrences > heap[0]->occurrences) {
+                heap[0] = current;
+
+                // Reorganizar o heap usando o afundamento (sink) HEAPIFY
+                //int index = num;
+                int index = 0;
+                int n = num; // Tamanho atual do heap
+                while (true) {
+                    int leftChild = 2 * index + 1;
+                    int rightChild = 2 * index + 2;
+                    int smallest = index;
+
+                    if (leftChild < n && heap[leftChild]->occurrences < heap[smallest]->occurrences)
+                        smallest = leftChild;
+
+                    if (rightChild < n && heap[rightChild]->occurrences < heap[smallest]->occurrences)
+                        smallest = rightChild;
+
+                    if (smallest != index) {
+                    // i++;
+                        //cout << "Esse: " << heap[index]->word << ": " << heap[index]->occurrences << " trocou por: " << heap[smallest]->word << ": " << heap[smallest]->occurrences << endl;
+                        std::swap(heap[index], heap[smallest]);
+                        index = smallest;
+                    } else {
+                        break;
+                    }
+                }
+            }
+        //}
+        ++it;
+    }
+
+}
+
+
+void fillHeap1(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo, unordered_map<string, string> &encodedHuffman, FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k) 
+{   
+    newHeap = heap;
+    bool okay;
+
+    cout << "função: " << newInfos.wordSelect << " FREQ: " << newInfos.frequencyWord << endl;
+
+    for(int i= 0; i< (int)word_select.size(); i++ ){
+        cout << "------word: " << word_select[i] << endl;
+        if(glossary.find(word_select[i]) != glossary.end()){
+            okay = false;
+            for(int j=0; j<(int)newHeap.size(); j++){
+                //cout << "AQuII" << endl;
+                if(newHeap[j]->word == word_select[i]){
+                    
+                    cout << "ANTESD DE QuaNDO TEMM" << endl;
+                    int width = 20;
+                    cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+                    for (int i = 0; i <(int)newHeap.size() ; ++i) {
+                        cout << i+1 << ") " << "\033[31m" << newHeap[i]->word << "\033[0m" << ": " << newHeap[i]->occurrences << endl;
+                    }
+                    cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+                    //cout << "deletou??" << endl;
+                    okay = true;
+                    newHeap.erase(newHeap.begin()+j);
+                    j--;
+
+                    for(int m=k/2-1; m>=0; m--){
+                        heapify(newHeap, k, m);
+                    }
+                    break;
+                }
+            }           
+
+            cout << "DEPOIS  DE QuaNDO TEMM" << endl;
+            int width = 20;
+            cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+            for (int i = 0; i <(int)newHeap.size() ; ++i) {
+                cout << i+1 << ") " << "\033[31m" << newHeap[i]->word << "\033[0m" << ": " << newHeap[i]->occurrences << endl;
+            }
+            cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+
+            if(!okay){
+                cout << "ANTESS: " << endl;
+                int width = 20;
+                cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+                    for (int i = 0; i <(int)newHeap.size() ; ++i) {
+                        cout << i+1 << ") " << "\033[31m" << newHeap[i]->word << "\033[0m" << ": " << newHeap[i]->occurrences << endl;
+                    }
+                    cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+
+                newHeap.erase(newHeap.begin());
+                int n = newHeap.size();
+                int index = 0;
+                while (true) {
+                    int leftChild = 2 * index + 1;
+                    int rightChild = 2 * index + 2;
+                    int smallest = index;
+
+                    if (leftChild < n && newHeap[leftChild]->occurrences < newHeap[smallest]->occurrences)
+                        smallest = leftChild;
+
+                    if (rightChild < n && newHeap[rightChild]->occurrences < newHeap[smallest]->occurrences)
+                        smallest = rightChild;
+
+                    if (smallest != index) {
+                        std::swap(newHeap[index], newHeap[smallest]);
+                        index = smallest;
+                    } else {
+                        break;
+                    }
+                }
+                // cout << "tam depois: " << newHeap.size() << endl;
+                cout << "DEPOISS: " << endl;
+                //int width = 20;
+                cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+                    for (int i = 0; i <(int)newHeap.size() ; ++i) {
+                        cout << i+1 << ") " << "\033[31m" << newHeap[i]->word << "\033[0m" << ": " << newHeap[i]->occurrences << endl;
+                    }
+                    cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+            }
+        }
+        else{
+            int width = 20;
+            cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+            for (int i = 0; i <(int)heap.size() ; ++i) {
+                cout << i+1 << ") " << "\033[31m" << heap[i]->word << "\033[0m" << ": " << heap[i]->occurrences << endl;
+            }
+            cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+            newHeap.erase(newHeap.begin());
+            newInfos.frequencyWord=0;
+        }
+
+        
+
+        // FilesInfo newInfos;
+        // vector<Node*>heap_aux;
+        // Node *rootBT = NULL;
+        // Node *rootAVL = NULL;
+
+        // priority_queue<Node*, vector<Node*>, Compare> fifo; 
+        // unordered_map<string, string> encodedHuffman;
+
+        for(int h=0; h<(int)newHeap.size(); h++){ // Pegando cada item do heap e montando as arovres AVL e Binárias
+            WordInfo newWord;
+            newWord.word = newHeap[h]->word;
+            newWord.occurrences = newHeap[h]->occurrences;
+            
+            //Necessario para utilizar no CodigoHuffaman
+            Node *node_aux = new Node;
+            node_aux->words=newWord;
+
+            heap_aux.push_back(node_aux);
+
+            buildBinaryTree(newWord, rootBT);
+            insertTree(rootAVL, newWord);
+        }
+
+            if(glossary.find(word_select[i]) != glossary.end()){
+                string code="";
+                encodedHuffman.clear();
+                HuffmanCode(heap_aux, fifo, code, encodedHuffman);
+
+                newInfos.rootBinaryTree = rootBT;
+                newInfos.rootAVL = rootAVL;
+                newInfos.fifo = fifo;
+                newInfos.encodedHuffman = encodedHuffman;
+                newInfos.wordSelect = word_select[i];
+                newInfos.frequencyWord = glossary.at(word_select[i]).occurrences;
+                //cout << "FREQUENCUA: " << newInfos.frequencyWord << "file: " << fileName << endl;
+
+                info_files[fileName] = newInfos;
+
+                //cout << "\n[ROOT BINARY TREE]" << endl;
+                //printLevels(info_files.at(fileName).rootBinaryTree);
+                //cout << "\n[ROOT AVL]" << endl;
+                //printLevels(info_files.at(fileName).rootAVL);
+
+
+
+                outputFile(fileName, newInfos, "data/Output.data");
+                //newHeap.clear();
+                heap_aux.clear();
+                //glossary.clear();
+                rootBT = NULL;
+                rootAVL = NULL;
+                encodedHuffman.clear();
+                while (!fifo.empty()) {
+                    fifo.pop(); // Remove o elemento do topo da fila
+                }
+            }
+            else{
+                newInfos.wordSelect = word_select[i];
+                newInfos.frequencyWord = 0;
+                outputFile(fileName, newInfos, "data/Output.data");
+            }
+            newHeap = heap;
+            heap_aux.clear();
+            encodedHuffman.clear();
+            rootBT = NULL;
+            rootAVL = NULL;
+            newInfos.wordSelect = "";
+            newInfos.frequencyWord = 0;
+            while (!fifo.empty()) {
+                fifo.pop(); // Remove o elemento do topo da fila
+            }
+    }
+
+    // int width = 20;
+    // cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+    // for (int i = 0; i <(int)heap.size() ; ++i) {
+    //     cout << i+1 << ") " << "\033[31m" << heap[i]->word << "\033[0m" << ": " << heap[i]->occurrences << endl;
+    // }
+    // cout << "+" << setfill('-') << setw(width - 2) << "+" << endl;
+
+}
+
+
+
+void heapify(vector<WordInfo*>& newHeap, int n, int index){
+    int minimum = index;
+    int leftChild = 2 * index + 1;
+    int rightChild = 2 * index + 2;
+    if (leftChild < n && newHeap[leftChild]->occurrences < newHeap[minimum]->occurrences)
+        minimum = leftChild;
+    if (rightChild < n && newHeap[rightChild]->occurrences < newHeap[minimum]->occurrences)
+        minimum = rightChild;
+    if(minimum!=index){
+        swap(newHeap[index], newHeap[minimum]);
+        heapify(newHeap, n, minimum);
+    }
+}
+
+
 
 bool emptyLine(const string linha)
 {
@@ -520,10 +777,11 @@ void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
         cerr << "Unable to open the file: " << fileName << endl;
         return;
     }
+
     outputFile << "FILE: " << fileName << endl;
     if(info_files.frequencyWord != 0){
         outputFile << "WORD \t\t FREQEUNCY" << endl;
-        outputFile << "\t>" << info_files.wordSelect << "\t" << info_files.frequencyWord << endl;
+        outputFile << ">" << info_files.wordSelect << "\t\t    " << info_files.frequencyWord << endl;
         outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
         printLevels(info_files.rootBinaryTree, outputFile);
         outputFile << "\n\n-----AVL TREE BY LEVEL-----" << endl;
@@ -536,13 +794,15 @@ void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
     }
     else{
         outputFile << "WORD \t\t FREQEUNCY" << endl;
-        outputFile << "\t>" << info_files.wordSelect << "\t" << "DOESN'T EXIST IN THIS FILE" << endl;
+         outputFile << ">" << info_files.wordSelect << "\t\t    " << info_files.frequencyWord << endl;
+        outputFile << "THIS WORD DOESN'T EXIST IN THIS FILE" << endl;
         outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
         outputFile << "\t\tNULL" << endl;
         outputFile << "\n\n-----AVL TREE BY LEVEL-----" << endl;
         outputFile << "\t\tNULL" << endl;
         outputFile << "\n\n-----HUFFMAN CODES-----" << endl;
         outputFile << "\t\tNULL" << endl;
+        outputFile << "---------------------------------------------------------------------------------------" << endl << endl;
     }
     
 

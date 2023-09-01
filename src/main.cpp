@@ -3,7 +3,7 @@
 
 using namespace std;
 
-#define k 10 //QUANTIDADE DE ELEMENTOS DE MAIOR FREQUENCIA
+#define k 11 //QUANTIDADE DE ELEMENTOS DE MAIOR FREQUENCIA
 #define ARQ 6 //QUANTIDADE DE ARQUIVOS A SEREM PROCESSADOS
 
 int main()
@@ -33,6 +33,7 @@ int main()
 
     vector<WordInfo*> heap;
     vector<Node*>heap_aux;
+    vector<WordInfo*> newHeap;
 
     FilesInfo newInfos;
 
@@ -40,74 +41,104 @@ int main()
     
     getWordsSelect(wordsSelect); //Pega as palavras desejadas e as coloca em um vetor
 
-    
-    for(int i=0; i<(int)wordsSelect.size(); i++){
-        cout << wordsSelect[i] << endl;
+    //fillHeap1(heap, glossary, k);
+    newHeap = heap;
 
-        for(int j=1; j<=ARQ; j++){
-            string fileName = "data/input" + to_string(j) + ".txt";
-            cout << "---------------[TEXTO " << fileName << "]---------------------------" << endl; 
-            //string fileName = "data/teste.txt";
-            readText(fileName, file, glossary, glossaryStopWords);
-            
-            fillHeap(heap, glossary, k, wordsSelect[0]);
 
-            if(glossary.find(wordsSelect[i]) != glossary.end()){ //É pq existe nesse arquivo de texto
-                for(int h=0; h<(int)heap.size(); h++){ // Pegando cada item do heap e montando as arovres AVL e Binárias
-                    WordInfo newWord;
-                    newWord.word = heap[h]->word;
-                    newWord.occurrences = heap[h]->occurrences;
-                    
-                    //Necessario para utilizar no CodigoHuffaman
-                    Node *node_aux = new Node;
-                    node_aux->words=newWord;
 
-                    heap_aux.push_back(node_aux);
+    for(int i=1; i<=ARQ; i++){
+        string fileName = "data/input" + to_string(i) + ".txt";
+        readText(fileName, file, glossary, glossaryStopWords);
 
-                    buildBinaryTree(newWord, rootBT);
-                    insertTree(rootAVL, newWord);
-                }
+        creatHeap(heap, glossary, k);
 
-                //Para o Codigo de Huffman;
-                string code="";
-                encodedHuffman.clear();
-                HuffmanCode(heap_aux, fifo, code, encodedHuffman);
-
-                
-                newInfos.rootBinaryTree = rootBT;
-                newInfos.rootAVL = rootAVL;
-                newInfos.fifo = fifo;
-                newInfos.encodedHuffman = encodedHuffman;
-                newInfos.wordSelect = wordsSelect[i];
-                newInfos.frequencyWord = glossary.at(wordsSelect[i]).occurrences;
-
-                info_files[fileName] = newInfos;
-
-                //cout << "\n[ROOT BINARY TREE]" << endl;
-                //printLevels(info_files.at(fileName).rootBinaryTree);
-                //cout << "\n[ROOT AVL]" << endl;
-                //printLevels(info_files.at(fileName).rootAVL);
-
-                cout << "---------------------------FIM ARQUIVO ---------------------------" << endl;
-                
-            }
-            else{
-                newInfos.frequencyWord = 0;
-                cout << " ------ A PALAVRA: " << wordsSelect[i] << " NÃO SE ENCONTRA NO TEXTO DE NOME: " << fileName << endl;
-            }
-
-            outputFile(fileName, newInfos, "data/Output.data");
-            heap.clear();
-            heap_aux.clear();
-            glossary.clear();
-            rootBT = NULL;
-            rootAVL = NULL;
-            encodedHuffman.clear();
-            while (!fifo.empty()) {
-                fifo.pop(); // Remove o elemento do topo da fila
-            }
-        }
+        fillHeap1(heap, glossary, wordsSelect, newHeap, heap_aux, rootBT, rootAVL, fifo, encodedHuffman, newInfos, info_files, fileName, k);
+        // heap.clear();
+        // heap_aux.clear();
+        // newHeap.clear();
+        // glossary.clear();
+        // rootBT = NULL;
+        // rootAVL = NULL;
+        // encodedHuffman.clear();
+        glossary.clear();
+        heap.clear();
+        newHeap.clear();
+        heap_aux.clear();
+        cout << "MAIN: " << newInfos.wordSelect << " FREQ: " << newInfos.frequencyWord << endl;
+        newInfos.wordSelect="";
+        newInfos.frequencyWord =0;
+        // while (!fifo.empty()) {
+        //     fifo.pop(); // Remove o elemento do topo da fila
+        // }
     }
+    
+    // for(int i=0; i<(int)wordsSelect.size(); i++){
+    //     cout << wordsSelect[i] << endl;
+
+    //     for(int j=1; j<=ARQ; j++){
+    //         string fileName = "data/input" + to_string(j) + ".txt";
+    //         //cout << "---------------[TEXTO " << fileName << "]---------------------------" << endl; 
+    //         //string fileName = "data/teste.txt";
+    //         readText(fileName, file, glossary, glossaryStopWords);
+            
+    //         fillHeap(heap, glossary, k, wordsSelect[0]);
+
+    //         if(glossary.find(wordsSelect[i]) != glossary.end()){ //É pq existe nesse arquivo de texto
+    //             for(int h=0; h<(int)heap.size(); h++){ // Pegando cada item do heap e montando as arovres AVL e Binárias
+    //                 WordInfo newWord;
+    //                 newWord.word = heap[h]->word;
+    //                 newWord.occurrences = heap[h]->occurrences;
+                    
+    //                 //Necessario para utilizar no CodigoHuffaman
+    //                 Node *node_aux = new Node;
+    //                 node_aux->words=newWord;
+
+    //                 heap_aux.push_back(node_aux);
+
+    //                 buildBinaryTree(newWord, rootBT);
+    //                 insertTree(rootAVL, newWord);
+    //             }
+
+    //             //Para o Codigo de Huffman;
+    //             string code="";
+    //             encodedHuffman.clear();
+    //             HuffmanCode(heap_aux, fifo, code, encodedHuffman);
+
+                
+    //             newInfos.rootBinaryTree = rootBT;
+    //             newInfos.rootAVL = rootAVL;
+    //             newInfos.fifo = fifo;
+    //             newInfos.encodedHuffman = encodedHuffman;
+    //             newInfos.wordSelect = wordsSelect[i];
+    //             newInfos.frequencyWord = glossary.at(wordsSelect[i]).occurrences;
+
+    //             info_files[fileName] = newInfos;
+
+    //             //cout << "\n[ROOT BINARY TREE]" << endl;
+    //             //printLevels(info_files.at(fileName).rootBinaryTree);
+    //             //cout << "\n[ROOT AVL]" << endl;
+    //             //printLevels(info_files.at(fileName).rootAVL);
+
+    //             //cout << "---------------------------FIM ARQUIVO ---------------------------" << endl;
+                
+    //         }
+    //         else{
+    //             newInfos.frequencyWord = 0;
+    //             cout << " ------ A PALAVRA: " << wordsSelect[i] << " NÃO SE ENCONTRA NO TEXTO DE NOME: " << fileName << endl;
+    //         }
+
+    //         outputFile(fileName, newInfos, "data/Output.data");
+    //         heap.clear();
+    //         heap_aux.clear();
+    //         glossary.clear();
+    //         rootBT = NULL;
+    //         rootAVL = NULL;
+    //         encodedHuffman.clear();
+    //         while (!fifo.empty()) {
+    //             fifo.pop(); // Remove o elemento do topo da fila
+    //         }
+    //     }
+    // }
     //printGlossary(glossaryStopWords);
 
     // for (const auto& pair : glossary) {

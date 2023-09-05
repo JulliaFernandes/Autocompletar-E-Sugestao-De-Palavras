@@ -12,23 +12,14 @@ mundo
 
 
 -----AVL TREE BY LEVEL-----
-sistema 
-segundo condição 
-sentido sobre priori teoria 
-pensamento mundo sujeito 
+pensamento 
+sobre condição 
+sentido segundo sistema sujeito 
+priori mundo teoria 
 
 
 -----HUFFMAN CODES-----
-WORD: sistema CODE: 1111
-WORD: sentido CODE: 1100
-WORD: teoria CODE: 101
-WORD: sujeito CODE: 100
-WORD: sobre CODE: 1110
-WORD: mundo CODE: 011
-WORD: condição CODE: 010
-WORD: priori CODE: 001
-WORD: segundo CODE: 1101
-WORD: pensamento CODE: 000
+sistema: 1111 || sentido: 1100 || teoria: 101 || sujeito: 100 || sobre: 1110 || mundo: 011 || condição: 010 || priori: 001 || segundo: 1101 || pensamento: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
@@ -44,23 +35,14 @@ mundo sujeito
 
 
 -----AVL TREE BY LEVEL-----
-pensamento 
-sobre condição 
-segundo sistema modo teoria 
-priori mundo sujeito 
+sistema 
+segundo condição 
+sobre pensamento modo sujeito 
+priori mundo teoria 
 
 
 -----HUFFMAN CODES-----
-WORD: sistema CODE: 1111
-WORD: pensamento CODE: 1110
-WORD: segundo CODE: 1101
-WORD: teoria CODE: 101
-WORD: sujeito CODE: 100
-WORD: sobre CODE: 1100
-WORD: mundo CODE: 011
-WORD: condição CODE: 010
-WORD: modo CODE: 001
-WORD: priori CODE: 000
+sistema: 1111 || pensamento: 1110 || segundo: 1101 || teoria: 101 || sujeito: 100 || sobre: 1100 || mundo: 011 || condição: 010 || modo: 001 || priori: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
@@ -93,23 +75,14 @@ sujeito
 
 
 -----AVL TREE BY LEVEL-----
-sistema 
+pensamento 
 segundo mundo 
-sentido pensamento condição teoria 
-sobre priori sujeito 
+sentido sobre condição sujeito 
+sistema priori teoria 
 
 
 -----HUFFMAN CODES-----
-WORD: pensamento CODE: 1111
-WORD: segundo CODE: 1101
-WORD: teoria CODE: 101
-WORD: sujeito CODE: 100
-WORD: priori CODE: 011
-WORD: sobre CODE: 1110
-WORD: mundo CODE: 010
-WORD: condição CODE: 001
-WORD: sentido CODE: 1100
-WORD: sistema CODE: 000
+pensamento: 1111 || segundo: 1101 || teoria: 101 || sujeito: 100 || priori: 011 || sobre: 1110 || mundo: 010 || condição: 001 || sentido: 1100 || sistema: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
@@ -126,22 +99,13 @@ sujeito
 
 -----AVL TREE BY LEVEL-----
 sistema 
-segundo mundo 
-sobre pensamento condição sujeito 
+sobre mundo 
+segundo pensamento condição sujeito 
 modo priori teoria 
 
 
 -----HUFFMAN CODES-----
-WORD: sistema CODE: 1111
-WORD: pensamento CODE: 1110
-WORD: segundo CODE: 1100
-WORD: teoria CODE: 101
-WORD: sujeito CODE: 100
-WORD: priori CODE: 011
-WORD: sobre CODE: 1101
-WORD: mundo CODE: 010
-WORD: condição CODE: 001
-WORD: modo CODE: 000
+sistema: 1111 || pensamento: 1110 || segundo: 1100 || teoria: 101 || sujeito: 100 || priori: 011 || sobre: 1101 || mundo: 010 || condição: 001 || modo: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
@@ -175,22 +139,13 @@ formas
 
 -----AVL TREE BY LEVEL-----
 quadros 
-podemos assim 
-formas importância sistema sentido 
-melhoria necessidade processo 
+sistema assim 
+necessidade melhoria podemos sentido 
+importância formas processo 
 
 
 -----HUFFMAN CODES-----
-WORD: necessidade CODE: 1110
-WORD: importância CODE: 1100
-WORD: processo CODE: 100
-WORD: assim CODE: 011
-WORD: formas CODE: 010
-WORD: quadros CODE: 1101
-WORD: sentido CODE: 101
-WORD: sistema CODE: 001
-WORD: melhoria CODE: 1111
-WORD: podemos CODE: 000
+necessidade: 1110 || importância: 1100 || processo: 100 || assim: 011 || formas: 010 || quadros: 1101 || sentido: 101 || sistema: 001 || melhoria: 1111 || podemos: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
@@ -239,22 +194,13 @@ saúde
 
 -----AVL TREE BY LEVEL-----
 sentido 
-metas melhoria 
-política eleitores assim políticas 
-saúde atual político 
+eleitores saúde 
+política metas melhoria político 
+atual assim políticas 
 
 
 -----HUFFMAN CODES-----
-WORD: político CODE: 111
-WORD: eleitores CODE: 1011
-WORD: políticas CODE: 100
-WORD: política CODE: 1010
-WORD: assim CODE: 011
-WORD: sentido CODE: 1101
-WORD: saúde CODE: 010
-WORD: metas CODE: 1100
-WORD: atual CODE: 001
-WORD: melhoria CODE: 000
+político: 111 || eleitores: 1011 || políticas: 100 || política: 1010 || assim: 011 || sentido: 1101 || saúde: 010 || metas: 1100 || atual: 001 || melhoria: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
@@ -301,23 +247,14 @@ informações
 
 
 -----AVL TREE BY LEVEL-----
-sistema 
-desenvolvimento ti 
-melhor dados segurança 
-informações novas implantação utilização 
+ti 
+desenvolvimento implantação 
+sistema melhor dados segurança 
+novas informações utilização 
 
 
 -----HUFFMAN CODES-----
-WORD: desenvolvimento CODE: 1110
-WORD: melhor CODE: 1101
-WORD: ti CODE: 1111
-WORD: utilização CODE: 101
-WORD: sistema CODE: 1100
-WORD: implantação CODE: 011
-WORD: segurança CODE: 100
-WORD: dados CODE: 010
-WORD: novas CODE: 001
-WORD: informações CODE: 000
+desenvolvimento: 1110 || melhor: 1101 || ti: 1111 || utilização: 101 || sistema: 1100 || implantação: 011 || segurança: 100 || dados: 010 || novas: 001 || informações: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
@@ -366,22 +303,13 @@ aumento
 
 -----AVL TREE BY LEVEL-----
 melhor 
-informações implantação 
-hardware ti assim segurança 
-aumento dados utilização 
+hardware implantação 
+informações assim ti segurança 
+dados aumento utilização 
 
 
 -----HUFFMAN CODES-----
-WORD: hardware CODE: 1101
-WORD: informações CODE: 1100
-WORD: dados CODE: 1111
-WORD: segurança CODE: 100
-WORD: implantação CODE: 011
-WORD: assim CODE: 1110
-WORD: utilização CODE: 101
-WORD: ti CODE: 010
-WORD: aumento CODE: 001
-WORD: melhor CODE: 000
+hardware: 1101 || informações: 1100 || dados: 1111 || segurança: 100 || implantação: 011 || assim: 1110 || utilização: 101 || ti: 010 || aumento: 001 || melhor: 000 || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input6.txt

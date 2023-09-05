@@ -46,14 +46,18 @@ typedef struct FilesInfo{
   unordered_map<string, string> encodedHuffman; 
 }FilesInfo;
 
-
-
-void fillHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& glossary, int k, string word_select);
+void deleteContent();
 
 void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& glossary, int k);
 
 
-void fillHeap1(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo, unordered_map<string, string> &encodedHuffman, FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k); 
+void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo, unordered_map<string, string> &encodedHuffman, FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k); 
+
+void callingBuildFunctions(vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL);
+
+bool callingBuildFunctionsHuffman(const unordered_map<string, WordInfo>& glossary, string word_select, unordered_map<string, string> &encodedHuffman, priority_queue<Node*, vector<Node*>, Compare> &fifo, vector<Node*>&heap_aux);
+
+void cleaningVariables(vector<Node*>&heap_aux,  unordered_map<string, string> &encodedHuffman, Node *&rootBT, Node *&rootAVL, FilesInfo &newInfos, priority_queue<Node*, vector<Node*>, Compare> &fifo);
 
 void heapify(vector<WordInfo*>& newHeap, int n, int index);
 
@@ -71,6 +75,7 @@ void printGlossary(unordered_map<string,WordInfo> glossary);
 bool treatments(string &word);
 
 void printLevels(Node* root, ostream& output = cout);
+void printOrder(Node* current_No, ostream& output = cout);
 
 void getWordsSelect(vector<string>&wordsSelect);
 
@@ -92,5 +97,7 @@ void buildHuffmanCodes(Node* root, string code, unordered_map<string, string>& h
 void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, unordered_map<string, string>& encodedHuffman);
 
 void outputFile(const string filename, FilesInfo info_files, string OutputFinal);
+
+
 
 #endif

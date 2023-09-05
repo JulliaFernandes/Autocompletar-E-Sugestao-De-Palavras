@@ -37,6 +37,8 @@ int main()
 
     FilesInfo newInfos;
 
+    deleteContent();
+
     fillGlossaryStopWords(glossaryStopWords);
     
     getWordsSelect(wordsSelect); //Pega as palavras desejadas e as coloca em um vetor
@@ -52,7 +54,7 @@ int main()
 
         creatHeap(heap, glossary, k);
 
-        fillHeap1(heap, glossary, wordsSelect, newHeap, heap_aux, rootBT, rootAVL, fifo, encodedHuffman, newInfos, info_files, fileName, k);
+        fillHeap(heap, glossary, wordsSelect, newHeap, heap_aux, rootBT, rootAVL, fifo, encodedHuffman, newInfos, info_files, fileName, k);
         // heap.clear();
         // heap_aux.clear();
         // newHeap.clear();

@@ -2,47 +2,26 @@ FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >modo		    129
 -----BINARY TREE BY LEVEL-----
-sentido 
-sobre 
-segundo pensamento 
-sistema teoria 
-condição 
-priori sujeito 
-mundo 
-
+sentido: 110 || segundo: 114 || sobre: 114 || sistema: 115 || pensamento: 115 || priori: 125 || mundo: 134 || condição: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-pensamento 
-sobre condição 
-sentido segundo sistema sujeito 
-priori mundo teoria 
-
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-sistema: 1111 || sentido: 1100 || teoria: 101 || sujeito: 100 || sobre: 1110 || mundo: 011 || condição: 010 || priori: 001 || segundo: 1101 || pensamento: 000 || 
+000: pensamento || 001: priori || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sentido || 1101: segundo || 1110: sobre || 1111: sistema || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >duas		    19
 -----BINARY TREE BY LEVEL-----
-sobre 
-segundo pensamento 
-sistema modo 
-priori teoria 
-condição 
-mundo sujeito 
-
+segundo: 114 || sobre: 114 || sistema: 115 || pensamento: 115 || priori: 125 || modo: 129 || mundo: 134 || condição: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-sistema 
-segundo condição 
-sobre pensamento modo sujeito 
-priori mundo teoria 
-
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-sistema: 1111 || pensamento: 1110 || segundo: 1101 || teoria: 101 || sujeito: 100 || sobre: 1100 || mundo: 011 || condição: 010 || modo: 001 || priori: 000 || 
+000: priori || 001: modo || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sobre || 1101: segundo || 1110: pensamento || 1111: sistema || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
@@ -52,10 +31,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -65,47 +42,26 @@ FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >modo		    129
 -----BINARY TREE BY LEVEL-----
-sentido 
-pensamento 
-segundo sistema 
-sobre condição 
-mundo 
-priori teoria 
-sujeito 
-
+sentido: 111 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 119 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-pensamento 
-segundo mundo 
-sentido sobre condição sujeito 
-sistema priori teoria 
-
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-pensamento: 1111 || segundo: 1101 || teoria: 101 || sujeito: 100 || priori: 011 || sobre: 1110 || mundo: 010 || condição: 001 || sentido: 1100 || sistema: 000 || 
+000: sistema || 001: condição || 010: mundo || 011: priori || 100: sujeito || 101: teoria || 1100: sentido || 1101: segundo || 1110: sobre || 1111: pensamento || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >duas		    19
 -----BINARY TREE BY LEVEL-----
-segundo 
-sobre sistema 
-pensamento condição 
-modo mundo 
-priori teoria 
-sujeito 
-
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-sistema 
-sobre mundo 
-segundo pensamento condição sujeito 
-modo priori teoria 
-
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-sistema: 1111 || pensamento: 1110 || segundo: 1100 || teoria: 101 || sujeito: 100 || priori: 011 || sobre: 1101 || mundo: 010 || condição: 001 || modo: 000 || 
+000: modo || 001: condição || 010: mundo || 011: priori || 100: sujeito || 101: teoria || 1100: segundo || 1101: sobre || 1110: pensamento || 1111: sistema || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
@@ -115,10 +71,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -128,24 +82,13 @@ FILE: data/input3.txt
 WORD 		 FREQEUNCY
 >modo		    134
 -----BINARY TREE BY LEVEL-----
-necessidade 
-sistema assim 
-melhoria sentido 
-quadros processo 
-importância 
-podemos 
-formas 
-
+formas: 134 || podemos: 134 || importância: 134 || quadros: 134 || melhoria: 134 || sistema: 134 || necessidade: 134 || assim: 199 || processo: 200 || sentido: 200 || 
 
 -----AVL TREE BY LEVEL-----
-quadros 
-sistema assim 
-necessidade melhoria podemos sentido 
-importância formas processo 
-
+necessidade: 134 || sistema: 134 || melhoria: 134 || quadros: 134 || importância: 134 || podemos: 134 || formas: 134 || assim: 199 || sentido: 200 || processo: 200 || 
 
 -----HUFFMAN CODES-----
-necessidade: 1110 || importância: 1100 || processo: 100 || assim: 011 || formas: 010 || quadros: 1101 || sentido: 101 || sistema: 001 || melhoria: 1111 || podemos: 000 || 
+000: podemos || 001: sistema || 010: formas || 011: assim || 100: processo || 101: sentido || 1100: importância || 1101: quadros || 1110: necessidade || 1111: melhoria || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
@@ -155,10 +98,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -171,10 +112,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -184,23 +123,13 @@ FILE: data/input4.txt
 WORD 		 FREQEUNCY
 >modo		    134
 -----BINARY TREE BY LEVEL-----
-política 
-atual 
-sentido político 
-eleitores melhoria políticas 
-metas assim 
-saúde 
-
+política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sentido 
-eleitores saúde 
-política metas melhoria político 
-atual assim políticas 
-
+política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || políticas: 267 || político: 400 || 
 
 -----HUFFMAN CODES-----
-político: 111 || eleitores: 1011 || políticas: 100 || política: 1010 || assim: 011 || sentido: 1101 || saúde: 010 || metas: 1100 || atual: 001 || melhoria: 000 || 
+000: melhoria || 001: atual || 010: saúde || 011: assim || 100: políticas || 1010: política || 1011: eleitores || 1100: metas || 1101: sentido || 111: político || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
@@ -210,10 +139,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -226,10 +153,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -239,22 +164,13 @@ FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >modo		    133
 -----BINARY TREE BY LEVEL-----
-sistema 
-desenvolvimento ti 
-melhor novas segurança 
-dados implantação utilização 
-informações 
-
+melhor: 200 || desenvolvimento: 200 || sistema: 200 || informações: 201 || dados: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
-ti 
-desenvolvimento implantação 
-sistema melhor dados segurança 
-novas informações utilização 
-
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----HUFFMAN CODES-----
-desenvolvimento: 1110 || melhor: 1101 || ti: 1111 || utilização: 101 || sistema: 1100 || implantação: 011 || segurança: 100 || dados: 010 || novas: 001 || informações: 000 || 
+000: informações || 001: novas || 010: dados || 011: implantação || 100: segurança || 101: utilização || 1100: sistema || 1101: melhor || 1110: desenvolvimento || 1111: ti || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
@@ -264,10 +180,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -280,10 +194,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -293,23 +205,13 @@ FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >modo		    132
 -----BINARY TREE BY LEVEL-----
-informações 
-hardware assim 
-melhor implantação 
-dados segurança 
-ti utilização 
-aumento 
-
+hardware: 200 || informações: 200 || aumento: 201 || ti: 201 || dados: 201 || melhor: 201 || assim: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
-melhor 
-hardware implantação 
-informações assim ti segurança 
-dados aumento utilização 
-
+informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----HUFFMAN CODES-----
-hardware: 1101 || informações: 1100 || dados: 1111 || segurança: 100 || implantação: 011 || assim: 1110 || utilização: 101 || ti: 010 || aumento: 001 || melhor: 000 || 
+000: melhor || 001: aumento || 010: ti || 011: implantação || 100: segurança || 101: utilização || 1100: informações || 1101: hardware || 1110: assim || 1111: dados || 
 ---------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
@@ -319,10 +221,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL
@@ -335,10 +235,8 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 -----BINARY TREE BY LEVEL-----
 		NULL
 
-
 -----AVL TREE BY LEVEL-----
 		NULL
-
 
 -----HUFFMAN CODES-----
 		NULL

@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int indexHuffman=0;
+
 void deleteContent()
 {
     string nomeArquivo = "data/Output.data";
@@ -70,7 +72,7 @@ void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& g
 }
 
 
-void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo, unordered_map<string, string> &encodedHuffman, FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k) 
+void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo,vector<pair<string, string>> &encHuffman,  FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k) 
 {   
     newHeap = heap;
     bool okay;
@@ -132,13 +134,12 @@ void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glo
 
         callingBuildFunctions(newHeap, heap_aux, rootBT, rootAVL);
 
-        bool canBuild = callingBuildFunctionsHuffman(glossary, word_select[i], encodedHuffman, fifo, heap_aux);
-
+        bool canBuild = callingBuildFunctionsHuffman(glossary, word_select[i], encHuffman, fifo, heap_aux);
         if(canBuild){
             newInfos.rootBinaryTree = rootBT;
             newInfos.rootAVL = rootAVL;
             newInfos.fifo = fifo;
-            newInfos.encodedHuffman = encodedHuffman;
+            newInfos.encHuffman = encHuffman;
             newInfos.wordSelect = word_select[i];
             newInfos.frequencyWord = glossary.at(word_select[i]).occurrences;
 
@@ -152,7 +153,8 @@ void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glo
             outputFile(fileName, newInfos, "data/Output.data");
         }
         newHeap = heap;
-        cleaningVariables(heap_aux, encodedHuffman, rootBT, rootAVL, newInfos, fifo);
+        cout << "AAAAAAAAAAA" << endl;
+        cleaningVariables(heap_aux, encHuffman ,rootBT, rootAVL, newInfos, fifo);
     }
 }
 
@@ -175,21 +177,23 @@ void callingBuildFunctions(vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, N
 }
 
 
-bool callingBuildFunctionsHuffman(const unordered_map<string, WordInfo>& glossary, string word_select, unordered_map<string, string> &encodedHuffman, priority_queue<Node*, vector<Node*>, Compare> &fifo, vector<Node*>&heap_aux)
+bool callingBuildFunctionsHuffman(const unordered_map<string, WordInfo>& glossary, string word_select,vector<pair<string, string>> &encHuffman,  priority_queue<Node*, vector<Node*>, Compare> &fifo, vector<Node*>&heap_aux)
 {
     if(glossary.find(word_select) != glossary.end()){
         string code="";
-        encodedHuffman.clear();
-        HuffmanCode(heap_aux, fifo, code, encodedHuffman);
+        encHuffman.clear();
+        indexHuffman=0;
+        HuffmanCode(heap_aux, fifo, code, encHuffman);
         return 1;
     }
     else return 0;
 }
 
-void cleaningVariables(vector<Node*>&heap_aux,  unordered_map<string, string> &encodedHuffman, Node *&rootBT, Node *&rootAVL, FilesInfo &newInfos, priority_queue<Node*, vector<Node*>, Compare> &fifo)
+void cleaningVariables(vector<Node*>&heap_aux, vector<pair<string, string>> &encHuffman ,Node *&rootBT, Node *&rootAVL, FilesInfo &newInfos, priority_queue<Node*, vector<Node*>, Compare> &fifo)
 {
     heap_aux.clear();
-    encodedHuffman.clear();
+    encHuffman.clear();
+    indexHuffman=0;
     rootBT = NULL;
     rootAVL = NULL;
     newInfos.wordSelect = "";
@@ -639,7 +643,7 @@ void printPreOrder(Node* current_No)
     }
 }
 
-void buildHuffmanCodes(Node* root, string code, unordered_map<string, string>& huffmanCodes)
+void buildHuffmanCodes(Node* root, string code, vector<pair<string, string>> &encHuffman)
 {
     if (!root)
         return;
@@ -647,23 +651,29 @@ void buildHuffmanCodes(Node* root, string code, unordered_map<string, string>& h
     //if (root->huffman_node.carac != '\0') huffmanCodes[root->huffman_node.carac] = code;
 
     code.push_back('0');
-    buildHuffmanCodes(root->left_son, code, huffmanCodes);
+    buildHuffmanCodes(root->left_son, code, encHuffman);
     code.pop_back(); // Remove o último caractere ("0") após retornar da chamada recursiva à esquerda
     
     //cout << "CODE: " << code << endl;
     // Adiciona "1" ao caminho
     code.push_back('1');
-    buildHuffmanCodes(root->right_son, code, huffmanCodes);
+    buildHuffmanCodes(root->right_son, code, encHuffman);
     code.pop_back(); // Remove o último caractere ("1") após retornar da chamada recursiva à direita
 
     //cout << "1CODE: " << code << endl;
     // Se o nó atual não tiver filhos (for uma folha), armazene o código binário no mapa
+    cout << "olaolaola" << endl;
     if (root->left_son == nullptr && root->right_son == nullptr) {
-        huffmanCodes[root->words.word] = code;
+        encHuffman.push_back(make_pair(code, root->words.word));
+        cout << "SIZEEEEEEEE: " << encHuffman.size();
+        //encHuffman[indexHuffman].first = code;
+        //huffmanCodes[root->words.word] = code;
+        cout << "indexhufman " << indexHuffman << endl;
+        indexHuffman++; 
     }
 }
 
-void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, unordered_map<string, string>& encodedHuffman)
+void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, vector<pair<string, string>> &encHuffman)
 {
     //cout << "------------------[CODIGO HUFFMAN]----------" << endl;
     putWordsInQueue(heap_aux, fifo);
@@ -677,11 +687,14 @@ void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Com
     cout << "--------------------------------------------------" << endl;
 
     //string code="";
-    buildHuffmanCodes(fifo.top(), code, encodedHuffman);
-    
+    buildHuffmanCodes(fifo.top(), code, encHuffman);
     cout << "CODIFICAÇÃO HUFFMAN" << endl;
 
-    for(auto entry: encodedHuffman){
+    // for(auto entry: encodedHuffman){
+    //     cout << "CHAR: " << entry.first << " CODE: " << entry.second << endl;
+    // }
+    cout << "---ENC HUFFMAN" << endl;
+    for(auto entry: encHuffman){
         cout << "CHAR: " << entry.first << " CODE: " << entry.second << endl;
     }
     cout << "--------------------------------------------------" << endl;
@@ -701,13 +714,18 @@ void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
         outputFile << "WORD \t\t FREQEUNCY" << endl;
         outputFile << ">" << info_files.wordSelect << "\t\t    " << info_files.frequencyWord << endl;
         outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
-        //printOrder(info_files.rootBinaryTree, outputFile);
-        printLevels(info_files.rootBinaryTree, outputFile);
+        printOrder(info_files.rootBinaryTree, outputFile);
+        //printLevels(info_files.rootBinaryTree, outputFile);
         outputFile << "\n\n-----AVL TREE BY LEVEL-----" << endl;
-        //printOrder(info_files.rootAVL, outputFile);
-        printLevels(info_files.rootAVL, outputFile); 
+        printOrder(info_files.rootAVL, outputFile);
+        //printLevels(info_files.rootAVL, outputFile); 
         outputFile << "\n\n-----HUFFMAN CODES-----" << endl;
-        for(auto entry: info_files.encodedHuffman){
+        // for(auto entry: info_files.encodedHuffman){
+        //     outputFile <<  entry.first << ": " << entry.second <<" || ";
+        //     //outputFile << "WORD: " << entry.first << " CODE: " << entry.second;
+
+        // }
+        for(auto entry: info_files.encHuffman){
             outputFile <<  entry.first << ": " << entry.second <<" || ";
             //outputFile << "WORD: " << entry.first << " CODE: " << entry.second;
 
@@ -720,9 +738,9 @@ void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
         outputFile << "THIS WORD DOESN'T EXIST IN THIS FILE" << endl;
         outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
         outputFile << "\t\tNULL" << endl;
-        outputFile << "\n\n-----AVL TREE BY LEVEL-----" << endl;
+        outputFile << "\n-----AVL TREE BY LEVEL-----" << endl;
         outputFile << "\t\tNULL" << endl;
-        outputFile << "\n\n-----HUFFMAN CODES-----" << endl;
+        outputFile << "\n-----HUFFMAN CODES-----" << endl;
         outputFile << "\t\tNULL" << endl;
         outputFile << "---------------------------------------------------------------------------------------" << endl << endl;
     }

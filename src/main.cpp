@@ -24,7 +24,8 @@ int main()
 
     //Para a Codificação de Huffman
     priority_queue<Node*, vector<Node*>, Compare> fifo; 
-    unordered_map<string, string> encodedHuffman;
+    //unordered_map<string, string> encodedHuffman;
+    vector<pair<string, string>> encHuffman;
     
     vector<string>wordsSelect;
 
@@ -54,7 +55,7 @@ int main()
 
         creatHeap(heap, glossary, k);
 
-        fillHeap(heap, glossary, wordsSelect, newHeap, heap_aux, rootBT, rootAVL, fifo, encodedHuffman, newInfos, info_files, fileName, k);
+        fillHeap(heap, glossary, wordsSelect, newHeap, heap_aux, rootBT, rootAVL, fifo, encHuffman ,newInfos, info_files, fileName, k);
         // heap.clear();
         // heap_aux.clear();
         // newHeap.clear();

@@ -43,7 +43,8 @@ typedef struct FilesInfo{
   Node *rootBinaryTree;
   Node *rootAVL;
   priority_queue<Node*, vector<Node*>, Compare> fifo;
-  unordered_map<string, string> encodedHuffman; 
+  vector<pair<string, string>> encHuffman;
+  //unordered_map<string, string> encodedHuffman; 
 }FilesInfo;
 
 void deleteContent();
@@ -51,13 +52,13 @@ void deleteContent();
 void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& glossary, int k);
 
 
-void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo, unordered_map<string, string> &encodedHuffman, FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k); 
+void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo, vector<pair<string, string>> &encHuffman ,FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k); 
 
 void callingBuildFunctions(vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL);
 
-bool callingBuildFunctionsHuffman(const unordered_map<string, WordInfo>& glossary, string word_select, unordered_map<string, string> &encodedHuffman, priority_queue<Node*, vector<Node*>, Compare> &fifo, vector<Node*>&heap_aux);
+bool callingBuildFunctionsHuffman(const unordered_map<string, WordInfo>& glossary, string word_select, vector<pair<string, string>> &encHuffman, priority_queue<Node*, vector<Node*>, Compare> &fifo, vector<Node*>&heap_aux);
 
-void cleaningVariables(vector<Node*>&heap_aux,  unordered_map<string, string> &encodedHuffman, Node *&rootBT, Node *&rootAVL, FilesInfo &newInfos, priority_queue<Node*, vector<Node*>, Compare> &fifo);
+void cleaningVariables(vector<Node*>&heap_aux, vector<pair<string, string>> &encHuffman ,Node *&rootBT, Node *&rootAVL, FilesInfo &newInfos, priority_queue<Node*, vector<Node*>, Compare> &fifo);
 
 void heapify(vector<WordInfo*>& newHeap, int n, int index);
 
@@ -93,8 +94,8 @@ void putWordsInQueue(vector<Node*>heap, priority_queue<Node*, vector<Node*>, Com
 void printQueue(priority_queue<Node*, vector<Node*>, Compare> fifo);
 void HuffmanTree(priority_queue<Node*, vector<Node*>, Compare> &fifo);
 void printPreOrder(Node* current_No);
-void buildHuffmanCodes(Node* root, string code, unordered_map<string, string>& huffmanCodes);
-void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, unordered_map<string, string>& encodedHuffman);
+void buildHuffmanCodes(Node* root, string code, vector<pair<string, string>> &encHuffman);
+void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, vector<pair<string, string>> &encHuffman);
 
 void outputFile(const string filename, FilesInfo info_files, string OutputFinal);
 

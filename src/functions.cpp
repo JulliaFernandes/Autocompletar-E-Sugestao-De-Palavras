@@ -71,7 +71,6 @@ void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& g
 
 }
 
-
 void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glossary, vector<string>word_select, vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, Node *&rootBT, Node *&rootAVL, priority_queue<Node*, vector<Node*>, Compare> &fifo,vector<pair<string, string>> &encHuffman,  FilesInfo &newInfos, unordered_map<string, FilesInfo> &info_files, string fileName, int k) 
 {   
     newHeap = heap;
@@ -171,8 +170,20 @@ void callingBuildFunctions(vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, N
 
             heap_aux.push_back(node_aux);
 
+            auto start = chrono::high_resolution_clock::now();
             buildBinaryTree(newWord, rootBT);
+            auto end = chrono::high_resolution_clock::now();
+
+            auto duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
+            cout << "Tempo para buildBinaryTree: " << duration.count() << " nanossegundos" << endl;
+            
+
+            start = chrono::high_resolution_clock::now();
             insertTree(rootAVL, newWord);
+            end = chrono::high_resolution_clock::now();
+
+            duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
+            cout << "Tempo para insertTree: " << duration.count() << " nanossegundos" << endl;
     }   
 }
 
@@ -291,7 +302,7 @@ void buildBinaryTree(WordInfo word, Node *&root)
         Node *tmp = root;
 
         while(tmp != NULL){
-            if(newNode->words.occurrences > tmp->words.occurrences){
+            if(newNode->words.occurrences >= tmp->words.occurrences){
                 if(tmp->right_son == NULL){
                     tmp->right_son = newNode;
                     break;
@@ -662,13 +673,9 @@ void buildHuffmanCodes(Node* root, string code, vector<pair<string, string>> &en
 
     //cout << "1CODE: " << code << endl;
     // Se o nó atual não tiver filhos (for uma folha), armazene o código binário no mapa
-    cout << "olaolaola" << endl;
     if (root->left_son == nullptr && root->right_son == nullptr) {
         encHuffman.push_back(make_pair(code, root->words.word));
-        cout << "SIZEEEEEEEE: " << encHuffman.size();
-        //encHuffman[indexHuffman].first = code;
         //huffmanCodes[root->words.word] = code;
-        cout << "indexhufman " << indexHuffman << endl;
         indexHuffman++; 
     }
 }

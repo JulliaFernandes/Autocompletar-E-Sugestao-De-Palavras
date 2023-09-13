@@ -2,7 +2,7 @@ FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >modo		    129
 -----BINARY TREE BY LEVEL-----
-sentido: 110 || segundo: 114 || sobre: 114 || sistema: 115 || pensamento: 115 || priori: 125 || mundo: 134 || condição: 134 || sujeito: 145 || teoria: 176 || 
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
 sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
@@ -15,7 +15,7 @@ FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >duas		    19
 -----BINARY TREE BY LEVEL-----
-segundo: 114 || sobre: 114 || sistema: 115 || pensamento: 115 || priori: 125 || modo: 129 || mundo: 134 || condição: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
 sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
@@ -42,7 +42,7 @@ FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >modo		    129
 -----BINARY TREE BY LEVEL-----
-sentido: 111 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 119 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
 sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
@@ -55,7 +55,7 @@ FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >duas		    19
 -----BINARY TREE BY LEVEL-----
-sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
 segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
@@ -82,7 +82,7 @@ FILE: data/input3.txt
 WORD 		 FREQEUNCY
 >modo		    134
 -----BINARY TREE BY LEVEL-----
-formas: 134 || podemos: 134 || importância: 134 || quadros: 134 || melhoria: 134 || sistema: 134 || necessidade: 134 || assim: 199 || processo: 200 || sentido: 200 || 
+necessidade: 134 || sistema: 134 || melhoria: 134 || quadros: 134 || importância: 134 || podemos: 134 || formas: 134 || assim: 199 || sentido: 200 || processo: 200 || 
 
 -----AVL TREE BY LEVEL-----
 necessidade: 134 || sistema: 134 || melhoria: 134 || quadros: 134 || importância: 134 || podemos: 134 || formas: 134 || assim: 199 || sentido: 200 || processo: 200 || 
@@ -123,7 +123,7 @@ FILE: data/input4.txt
 WORD 		 FREQEUNCY
 >modo		    134
 -----BINARY TREE BY LEVEL-----
-política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
+política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || políticas: 267 || político: 400 || 
 
 -----AVL TREE BY LEVEL-----
 política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || políticas: 267 || político: 400 || 
@@ -164,7 +164,7 @@ FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >modo		    133
 -----BINARY TREE BY LEVEL-----
-melhor: 200 || desenvolvimento: 200 || sistema: 200 || informações: 201 || dados: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
 sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
@@ -205,7 +205,7 @@ FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >modo		    132
 -----BINARY TREE BY LEVEL-----
-hardware: 200 || informações: 200 || aumento: 201 || ti: 201 || dados: 201 || melhor: 201 || assim: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
 informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 

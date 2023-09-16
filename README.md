@@ -11,17 +11,17 @@
 ## 📌Sumário
 - [Objetivos](#Objetivos)
 - [Introdução](#Introdução)
-- [Logica adotada](#Lógica-adotada)
-- [Resolução do Problema](#Resolução-do-problema)
 - [Arquivos](#Arquivos)
-- [Estruturas utilizadas](#estruturas-utilizadas)
+- [Logica adotada](#Lógica-adotada)
 - [Funções](#Funções)
+- [Estruturas utilizadas](#estruturas-utilizadas)
 - [Resultados](#Resultados)
 - [Tempo](#Tempo)
 - [Conclusão](#Conclusão)
 - [Referências](#Referências)
 - [Compilação e execução](#Compilação-e-execução)
 - [Contato](#Contato)
+- [Bibliotecas](#BIBLIOTECAS)
 
   
 ## 💻Objetivos
@@ -33,7 +33,7 @@ Sendo assim ao final dessa atividade teremos um algoritmo que realiza as operaç
 - [✔️] Realiza a montagem de arvores binárias, AVL e codificação de Huffman
 
 Neste programa foi feita a utlização de bibliotecas como `<unordered_map>` que é estrutura propria da linguagem C++ que serve para a utilização da montagem da tabela hash, sendo possivel mais informações sobre essa biblioteca clicando no link a seguir: [<unordered_map>](https://cplusplus.com/reference/unordered_map/unordered_map/) <br>
-Foi utlizado tambem expressões regulares como `Regex` e para a manipulação dos textos lidos, mais informações de sua utlização e seu funcionamento basta acessar o link a seguir: [<regex>](https://cplusplus.com/reference/regex/basic_regex/) 
+Foi utlizado tambem expressões regulares como `<regex>` e para a manipulação dos textos lidos, mais informações de sua utlização e seu funcionamento basta acessar o link a seguir: [<regex>](https://cplusplus.com/reference/regex/basic_regex/) 
 
 
 
@@ -65,6 +65,14 @@ Uma árvore binária completa, conhecida como árvore de Huffman, é construída
 
 (IMAGEM DE COMO É O HUFFMAN)
 
+## 📄Arquivos
+- <strong>Main.cpp:</strong> Chamada das funções de leitura e processamento dos textos, aberto um arquivo por vez e realizado seus dados para cada palavra, tempo de execução do código e a limpeza das variaveis.
+- <strong>header.cpp:</strong> Inclusão das bibliotecas e arquivos utilizados.
+- <strong>functions.hpp:</strong> Declaração das funções.
+- <strong>functions.cpp:</strong> Desenvolvimento das funções. 
+- <strong>data/input.data:</strong> Lista de palavras que se deseja procurar e realizar o interpretação.
+- <strong>data/input.txt</strong> Textos a serem lidos no programa.
+- <strong>data/stopwords.txt:</strong> Stop words, como por exemplo, para artigo (a, o, as,os) e para conjunções (e, ou), serão palvras que não seram lidas e processadas no texto.
 
 
 ## 🧠Lógica adotada
@@ -80,12 +88,13 @@ Buscando uma melhora significativa de tempo foi utlizado a abordagem de fazer a 
 
   (FOTO DA LINHAS DE ARQUIVO E K PALAVRAS NO CODIGO)
  
-
+## 🔨 Funções
 A função principal desse algoritmo é a:<br>
 - `fillheap()`: abordamos a lógica de criar um heap com as K palavras mais frequentes. Como mencionado anteriormente, o usuário precisa especificar a quantidade desejada com um item a mais. Nessa função, verificamos se a palavra procurada está presente no heap. Se estiver, ela é removida, e a estrutura do heap é reorganizada para manter a quantidade desejada pelo usuário. Se a palavra não estiver no heap, apenas o primeiro item (com a menor frequência) é excluído, e o heap é ajustado para garantir que os filhos sejam maiores que o pai.<br>
 Após essa etapa, com o heap devidamente configurado, chamamos as funções de inserção para as árvores AVL e binária, além de criar a árvore de Huffman. Em seguida, a função responsável por colocar as informações coletadas de uma palavra no output é chamada, seguida pela limpeza das variáveis usadas para garantir o funcionamento adequado na próxima palavra.<br>
 Esse processo é repetido até que todas as palavras escolhidas pelo usuário sejam processadas no texto em questão. Somente então podemos avançar para o próximo texto.
 
+Outras funções importantes para o funcionamento do código são: 
 - `buildBinaryTree()`: função que tem o objetivo de criar a arvore binária.
 - `insertTree()`: função de criação da árvore AVL.
 - `HuffmanTree()`: função de criação da árvore de Huffman.
@@ -94,7 +103,19 @@ Esse processo é repetido até que todas as palavras escolhidas pelo usuário se
 - `outputFile()`: função para escrever no arquivo de saida.
 - `creatHeap()`: função de criação do heap e das K palavras mais frequentes.
 
-## ⚙️ Estruturas utilizadas
+## 🗂️ Estruturas utilizadas
+
+Alem das estruturas utilizadas pela atividade [Top K Itens](https://github.com/JulliaFernandes/TopKItens) foi implementado a mais a função de <priority_queue> para a montagem da arvore de huffman.
+
+<details>
+<summary><h2>Priority_queue</h2></summary>
+Em resumo, a <priority_queue> em C++ é uma estrutura de dados que permite organizar elementos de acordo com sua prioridade, com base em um heap binário subjacente, tornando fácil e eficiente o acesso ao elemento de maior prioridade. Sua implementação interna é abstraída para o usuário, facilitando o uso dessa estrutura em algoritmos e aplicações que requerem ordenação por prioridade.
+<div align="center">
+  <img src="imgs/minHeap.gif" alt="minHeap" width="500px">
+  <p align="center"><em> Exemplificação da comparação do minHeap </em></p>
+</div>
+</details>
+  
 Após compreendermos a estrutura de uma árvore binária e seus conceitos básicos, a implementação da árvore AVL exigiu a introdução de funções adicionais. O funcionamento geral de uma árvore AVL segue a mesma lógica de uma árvore binária, mas se diferencia devido aos constantes balanceamentos que ocorrem. Para lidar com isso, foram criadas funções cruciais, incluindo:
 
 - `rebalanceTree`: Responsável por reequilibrar a árvore quando necessário.
@@ -137,6 +158,10 @@ Já em casos em que a palavra que esta sendo processada não contém no texto li
 - As arvores recebem NULL
 
 (FOTO DO OUTPUT QUANDO A PALAVRA NAO EXISTE)
+
+No terminal do usuário é mostrado somente o tempo total gasto para rodar o algoritmo.
+
+(FOTO TERMIANL)
 
 ## 📈 Conclusões:
 A tarefa de extrair as K palavras mais frequentes de um texto e organizá-las em árvores binárias, árvores AVL e códigos Huffman é uma atividade que oferece a oportunidade de investigar diversas estruturas de dados e algoritmos fundamentais na área da computação. Cada uma dessas estruturas possui suas próprias características vantajosas e é mais apropriada para cenários específicos.
@@ -186,7 +211,7 @@ Quando se trata de determinar a melhor opção para cada situação, podemos che
 
 Se você está lidando com um conjunto pequeno e estático de palavras frequentes, uma árvore binária pode ser suficiente devido à sua simplicidade.
 Quando o conjunto de palavras frequentes é grande e sujeito a mudanças frequentes, uma árvore AVL é mais apropriada para garantir um desempenho eficaz nas operações de busca.
-Se a economia de espaço de armazenamento é uma prioridade, especialmente quando as palavras frequentes possuem comprimentos de código variáveis, a escolha ideal é um código Huffman.
+Se a economia de espaço de armazenamento é uma prioridade, principalmente quando as palavras frequentes possuem comprimentos de código variáveis, a escolha ideal é um código Huffman.
 
 Além disso, essa atividade oferece oportunidades de aprendizado como:
 
@@ -195,7 +220,7 @@ Além disso, essa atividade oferece oportunidades de aprendizado como:
 - Aprender sobre otimização e eficiência no uso de espaço, através da aplicação de códigos Huffman.
 - Desenvolvam habilidades de resolução de problemas ao enfrentar desafios práticos relacionados ao processamento de texto e manipulação de dados.
 
-Resumindo, essa atividade proporciona uma valiosa oportunidade para explorar e aplicar conceitos fundamentais de estruturas de dados e algoritmos, ao mesmo tempo em que promove a compreensão das situações em que cada estrutura é mais apropriada.
+Resumindo, essa atividade proporciona uma grande oportunidade para explorar e aplicar conceitos fundamentais de estruturas de dados e algoritmos, ao mesmo tempo em que promove a compreensão das situações em que cada estrutura é mais apropriada.
 
   
 ## ✔️Referencia
@@ -203,6 +228,8 @@ Resumindo, essa atividade proporciona uma valiosa oportunidade para explorar e a
 - https://www.freecodecamp.org/portuguese/news/tudo-o-que-voce-precisa-saber-sobre-estruturas-de-dados-em arvore/#:~:text=Uma%20%C3%A1rvore%20%C3%A9%20um%20conjunto,%C3%A1rvore%20%C3%A9%20chamado%20de%20raiz%20.
 
 - https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/huffman.html
+
+- https://www.studysmarter.co.uk/explanations/computer-science/data-structures/priority-queue/
 
 ## 👾Compilação e execução
 
@@ -216,6 +243,26 @@ O codigo possui um arquivo Makefile que realiza todo o procedimento de compilaç
 |  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
 |  `make`                | Executa a compilação do programa utilizando o g++, e o resultado vai para a pasta build           |
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
+
+# BIBLIOTECAS 
+
+<p>{🔎<b>Todas bibliotecas utilizadas durante o desenvolvimento devem ser listadas aqui, mesmo aquelas que você não tem certeza sobre se estão ou não sendo utilizadas. É melhor sobrar do que faltar!</b>}</p>
+
+Para o funcionamento desejado, é necessário incluir as seguintes bibliotecas no programa:<br/>
+
+<ul>
+	<li><code>#include `unordered_map`  </code></li>
+	<li><code>#include 'regex'</code></li>
+	<li><code>#include 'algorithm'</code></li>
+	<li><code>#include 'queue'</code></li>
+  <li><code>#include 'iomanip'</code></li>
+  <li><code>#include 'vector'</code></li>
+  <li><code>#include 'fstream'</code></li>
+  <li><code>#include 'chrono'</code></li>
+  
+</ul>
+
+<hr/>
 
 
 ## ✉️Contato

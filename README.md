@@ -40,8 +40,8 @@ A partir disso é possivel implementar varias tipos de arvores, como a AVL, a bi
 
 
 <div align="center">
-  <img src="imgs/carbon.png" alt="regex" width="500px">
-  <p align="center"><em> Exemplificação do Regex utlizado </em></p>
+  <img src="imgs/avl-not-avl.png" alt="avl and not avl" width="500px">
+  <p align="center"><em> AVL e binária </em></p>
 </div>
 
 
@@ -237,10 +237,8 @@ Resumindo, essa atividade proporciona uma grande oportunidade para explorar e ap
   
 ## ✔️Referencia
 
-- https://www.freecodecamp.org/portuguese/news/tudo-o-que-voce-precisa-saber-sobre-estruturas-de-dados-em arvore/#:~:text=Uma%20%C3%A1rvore%20%C3%A9%20um%20conjunto,%C3%A1rvore%20%C3%A9%20chamado%20de%20raiz%20.
-
+- https://www.freecodecamp.org/portuguese/news/tudo-o-que-voce-precisa-saber-sobre-estruturas-de-dados-em-arvore/
 - https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/huffman.html
-
 - https://www.studysmarter.co.uk/explanations/computer-science/data-structures/priority-queue/
 
 ## 👾Compilação e execução

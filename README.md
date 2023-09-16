@@ -7,23 +7,7 @@
 ![Make](https://img.shields.io/badge/Compilacao-Make-orange)
 ![Linguagem](https://img.shields.io/badge/Linguagem-C%2B%2B-blue)
 </div>
-
-## 📌Sumário
-- [Objetivos](#Objetivos)
-- [Introdução](#Introdução)
-- [Arquivos](#Arquivos)
-- [Logica adotada](#Lógica-adotada)
-- [Funções](#Funções)
-- [Estruturas utilizadas](#estruturas-utilizadas)
-- [Resultados](#Resultados)
-- [Tempo](#Tempo)
-- [Conclusão](#Conclusão)
-- [Referências](#Referências)
-- [Compilação e execução](#Compilação-e-execução)
-- [Contato](#Contato)
-- [Bibliotecas](#BIBLIOTECAS)
-
-  
+ 
 ## 💻Objetivos
 Este é um programa desenvolvido em C++ para a disciplina de Algoritmos e Estruturas de Dados II, proposta pelo professor [Michel Pires](https://github.com/mpiress) <br>
 O objetivo desta atividade consiste em verificar a existencia de uma palavra digitada pelo usuario em determinado texto e apartir dela criar uma árvore binaria, AVL e uma codificação Huffman, deve-se entao criar um sistema que possibilite a funcionalidade de oferecer sugestões de palavras aos usuários.
@@ -54,16 +38,21 @@ Foi utlizado tambem expressões regulares como `<regex>` e para a manipulação 
 
 A partir disso é possivel implementar varias tipos de arvores, como a AVL, a binária a Red-Black-Tree, mas tendo suas mudanças cada uma.
 
-(IMAGEM DA BINARAI E AVL)
+
+<div align="center">
+  <img src="imgs/carbon.png" alt="regex" width="500px">
+  <p align="center"><em> Exemplificação do Regex utlizado </em></p>
+</div>
 
 
 <h4><em>Codificação de Huffman</em></h4>
 Uma árvore de Huffman é uma estrutura binária na qual cada nó interno possui exatamente dois filhos. Importante notar que as árvores de Huffman não consideram a relação de ordem (esquerda ou direita) entre os filhos de um nó.<br>
 Uma árvore binária completa, conhecida como árvore de Huffman, é construída de forma recursiva combinando os dois símbolos de menor probabilidade. Esses símbolos, os utilizados nesse trabalho foi o simbolo de vazio: '/0', são agrupados em novamente com o restante dos simbolos. Esse processo é repetido até que todos os símbolos tenham sido agrupados em símbolos auxiliares, formando assim uma árvore binária. Posteriormente, a árvore é percorrida e valores binários, 1 ou 0, são atribuídos a cada aresta. Os códigos são então gerados com base nesse percurso, sendo o 0 a ida para a esquerda e 1 a ida para a direita.
 
-
-
-(IMAGEM DE COMO É O HUFFMAN)
+<div align="center">
+  <img src="imgs/codigoHuffman.png" alt="codigoHuffman" width="500px">
+  <p align="center"><em> Exemplificação do codigo Huffman </em></p>
+</div>
 
 ## 📄Arquivos
 - <strong>Main.cpp:</strong> Chamada das funções de leitura e processamento dos textos, aberto um arquivo por vez e realizado seus dados para cada palavra, tempo de execução do código e a limpeza das variaveis.
@@ -86,7 +75,13 @@ Buscando uma melhora significativa de tempo foi utlizado a abordagem de fazer a 
 - É importante que o usuário especifique a quantidade desejada de palavras de sugestão, que está localizada na linha (5) do arquivo `main.cpp`. A quantidade desejada deve ser um item a mais; por exemplo, se desejar as 10 palavras mais frequentes, você deve configurar a quantidade como 11. Durante a execução do código, haverá manipulação para excluir uma palavra e, ao final, o programa apresentará ao usuário apenas as 10 palavras mais frequentes.
 - Certifique-se de nomear os arquivos no formato "input1.txt", "input2.txt" e assim por diante para garantir o funcionamento correto do código. Também é necessário incluir a quantidade de arquivos a serem lidos na linha (6) do arquivo `main.cpp`.
 
-  (FOTO DA LINHAS DE ARQUIVO E K PALAVRAS NO CODIGO)
+  
+<div align="center">
+  <img src="imgs/VarMain.png" alt="variaveis main" width="500px">
+  <p align="center"><em> Variaveis das K palavras e quantidade de arquivos </em></p>
+</div>
+
+
  
 ## 🔨 Funções
 A função principal desse algoritmo é a:<br>
@@ -111,8 +106,8 @@ Alem das estruturas utilizadas pela atividade [Top K Itens](https://github.com/J
 <summary><h2>Priority_queue</h2></summary>
 Em resumo, a <priority_queue> em C++ é uma estrutura de dados que permite organizar elementos de acordo com sua prioridade, com base em um heap binário subjacente, tornando fácil e eficiente o acesso ao elemento de maior prioridade. Sua implementação interna é abstraída para o usuário, facilitando o uso dessa estrutura em algoritmos e aplicações que requerem ordenação por prioridade.
 <div align="center">
-  <img src="imgs/minHeap.gif" alt="minHeap" width="500px">
-  <p align="center"><em> Exemplificação da comparação do minHeap </em></p>
+  <img src="imgs/priority-queue.png" alt="priority-queue" width="500px">
+  <p align="center"><em> Exemplificação ddo priority-queue </em></p>
 </div>
 </details>
   
@@ -149,19 +144,36 @@ O formato de saída dos textos no arquivo `output.data` são realizados da segui
 - A construção da árvore binária, sendo feita de forma crescente de frequencia.
 - A construção da árvore AVL e tambem sendo impressa na ordem crescente de frequencia.
 - Codificação de huffman com a palavra e seu respectivo código formado e é impresso de maneira crescente de código.
+  - OBS: Se quiser imprimir em formato de nivel as árvores AVL e binária, basta comentar a função de impressao na linha 689 e 692 do arquivo `functions.cpp` e descomentar as linhas: 690 e 693 
 
-(FOTO DO OUTPUT)
+<div align="center">
+  <img src="imgs/outputNull.png" alt="output" width="500px">
+  <p align="center"><em> Output.data </em></p>
+</div>
 
 Já em casos em que a palavra que esta sendo processada não contém no texto lido a saída fica da seguinte maneira:
 - É mostrado ao usuario ainda o texto em que se encontra e a palavra processada e sua frequencia como zero
 - É exibido ao usuário a seguinte mensagem: 'THIS WORD DOESN'T EXIST IN THIS FILE'
 - As arvores recebem NULL
 
-(FOTO DO OUTPUT QUANDO A PALAVRA NAO EXISTE)
 
-No terminal do usuário é mostrado somente o tempo total gasto para rodar o algoritmo.
+<div align="center">
+  <img src="imgs/outputNull.png" alt="output" width="500px">
+  <p align="center"><em> Output.data </em></p>
+</div>
 
-(FOTO TERMIANL)
+No terminal do usuário é mostrado somente o tempo total gasto para rodar o algoritmo e as K palavras mais frequentes de cada texto à cada palavra.
+
+
+<div align="center">
+  <img src="imgs/terminalWords.png" alt="termianlWords" width="200px">
+  <p align="center"><em> Termianal do usuário </em></p>
+</div>
+
+<div align="center">
+  <img src="imgs/terminalTempo.png" alt="terminalTempo" width="200px">
+  <p align="center"><em> Terminal do usuário </em></p>
+</div>
 
 ## 📈 Conclusões:
 A tarefa de extrair as K palavras mais frequentes de um texto e organizá-las em árvores binárias, árvores AVL e códigos Huffman é uma atividade que oferece a oportunidade de investigar diversas estruturas de dados e algoritmos fundamentais na área da computação. Cada uma dessas estruturas possui suas próprias características vantajosas e é mais apropriada para cenários específicos.

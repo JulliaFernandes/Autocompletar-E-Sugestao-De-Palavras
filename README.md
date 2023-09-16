@@ -148,7 +148,7 @@ O formato de saída dos textos no arquivo `output.data` são realizados da segui
 - A palavra que esta sendo lida no momento e sua respectiva frequencia no texto em questão
 - A construção da árvore binária, sendo feita de forma crescente de frequencia.
 - A construção da árvore AVL e tambem sendo impressa na ordem crescente de frequencia.
-- Codificação de huffman com a palavra e seu respectivo código formado.
+- Codificação de huffman com a palavra e seu respectivo código formado e é impresso de maneira crescente de código.
 
 (FOTO DO OUTPUT)
 

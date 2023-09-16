@@ -17,7 +17,7 @@
 - [Estruturas utilizadas](#estruturas-utilizadas)
 - [Funções](#Funções)
 - [Resultados](#Resultados)
-- [Tempo] (#Tempo)
+- [Tempo](#Tempo)
 - [Conclusão](#Conclusão)
 - [Referências](#Referências)
 - [Compilação e execução](#Compilação-e-execução)
@@ -32,7 +32,8 @@ Sendo assim ao final dessa atividade teremos um algoritmo que realiza as operaç
 - [✔️] Seleciona as K palavras mais frequentes presente e cada texto e lhe da de sugestão 
 - [✔️] Realiza a montagem de arvores binárias, AVL e codificação de Huffman
 
-Neste programa foi feita a utlização de bibliotecas como `<unordered_map>` que é estrutura propria da linguagem C++ que serve para a utilização da montagem da tabela hash, sendo possivel mais informações sobre essa biblioteca clicando no link a seguir: [<unordered_map>](URL)
+Neste programa foi feita a utlização de bibliotecas como `<unordered_map>` que é estrutura propria da linguagem C++ que serve para a utilização da montagem da tabela hash, sendo possivel mais informações sobre essa biblioteca clicando no link a seguir: [<unordered_map>](https://cplusplus.com/reference/unordered_map/unordered_map/) <br>
+Foi utlizado tambem expressões regulares como `Regex` e para a manipulação dos textos lidos, mais informações de sua utlização e seu funcionamento basta acessar o link a seguir: [<regex>](https://cplusplus.com/reference/regex/basic_regex/) 
 
 
 
@@ -65,14 +66,16 @@ Uma árvore binária completa, conhecida como árvore de Huffman, é construída
 
 ## 🧠Lógica adotada
 
-Nesse programa foi utilizado uma atividade ja realizada a atividade Top K Itens, nela tinhamos que pegar as K palavras mais frequentes de um texto e com isso exibir ao usuário a montagem de arvore tendo como filhos as posições 2*i+1 e 2*i+2, mais informações sobre essa atividade e como foi feita a implementaçõe e como foi feito basta clicar no link a seguir: [Top K Itens](https://github.com/JulliaFernandes/TopKItens). <br> 
+Nesse programa foi utilizado uma atividade ja realizada anteriormente, a atividade Top K Itens presente nesse perfil, nela tinhamos que pegar as K palavras mais frequentes de um texto e com isso exibir ao usuário a montagem de um heap tendo como filhos as posições 2*i+1 e 2*i+2, mais informações sobre essa atividade e como foi feita as implementações e seu funcionamaento basta clicar no link a seguir: [Top K Itens](https://github.com/JulliaFernandes/TopKItens). <br> 
 Tendo uma parte ja feita foi necessario somente complementar com as funções das criações das arvores.
 
-Buscando uma melhora significativa de tempo foi utlizado a abordagem de fazer a leitura de todas as palavras por arquivo, dessa maneira a cada arquivo de texto aberto é visto se a lista de palavras selecionadas pelo usuario esta presente no texto, se em caso afirmativo é realizado a montagem da arvore das K palavras mais frequentes e realizado a montagem de cada árvore necessaria para a aplicação dessa atividade e a codificação de huffman, importante ressaltar que se a palavra procurada estiver presente no texto e tambem ser uma das palavras mais frequentes no texto e estiver no heap montado é necessario exclui-la de la e colocar a proxima palavra mais frequente.
+Buscando uma melhora significativa de tempo foi utlizado a abordagem de fazer a leitura de todas as palavras por arquivo, dessa maneira a cada arquivo de texto aberto é visto se a lista de palavras selecionadas pelo usuario esta presente no texto, se em caso afirmativo é realizado a montagem da arvore das K palavras mais frequentes e realizado a montagem de cada árvore necessaria para a aplicação dessa atividade e a codificação de huffman, importante ressaltar que se a palavra procurada estiver presente no texto e tambem ser uma das palavras mais frequentes no texto, ou seja estará no heap,  é necessario exclui-la de la e colocar a proxima palavra mais frequente.
 
 🚨 <b>INFORMAÇÕES IMPORTANTES</b> 🚨 <br>
-- É importante que o usuário especifique a quantidade desejada de palavras de sugestão, que está localizada na linha (XX) do arquivo `main.cpp`. A quantidade desejada deve ser um item a mais; por exemplo, se desejar as 10 palavras mais frequentes, você deve configurar a quantidade como 11. Durante a execução do código, haverá manipulação para excluir uma palavra e, ao final, o programa apresentará ao usuário apenas as 10 palavras mais frequentes
-- Certifique-se de nomear os arquivos no formato "input1.txt", "input2.txt" e assim por diante para garantir o funcionamento correto do código. Também é necessário incluir a quantidade de arquivos a serem lidos na linha (XX) do arquivo `main.cpp`.
+- É importante que o usuário especifique a quantidade desejada de palavras de sugestão, que está localizada na linha (5) do arquivo `main.cpp`. A quantidade desejada deve ser um item a mais; por exemplo, se desejar as 10 palavras mais frequentes, você deve configurar a quantidade como 11. Durante a execução do código, haverá manipulação para excluir uma palavra e, ao final, o programa apresentará ao usuário apenas as 10 palavras mais frequentes.
+- Certifique-se de nomear os arquivos no formato "input1.txt", "input2.txt" e assim por diante para garantir o funcionamento correto do código. Também é necessário incluir a quantidade de arquivos a serem lidos na linha (6) do arquivo `main.cpp`.
+
+  (FOTO DA LINHAS DE ARQUIVO E K PALAVRAS NO CODIGO)
  
 
 A função principal desse algoritmo é a:<br>
@@ -82,9 +85,9 @@ Esse processo é repetido até que todas as palavras escolhidas pelo usuário se
 
 - `buildBinaryTree()`: função que tem o objetivo de criar a arvore binária.
 - `insertTree()`: função de criação da árvore AVL.
-- `HuffmanTree()`: funçõa de criação da árvore de Huffman.
+- `HuffmanTree()`: função de criação da árvore de Huffman.
 - `HuffmanCode()`: função criada no intuito de salvar os códigos formados de cada palavra da arvore de Huffman.
-- `buildHuffmanCodes()`: função criada para a contrução dos codigos na arvore de Huffman.
+- `buildHuffmanCodes()`: função criada para a construção dos codigos na arvore de Huffman.
 - `outputFile()`: função para escrever no arquivo de saida.
 - `creatHeap()`: função de criação do heap e das K palavras mais frequentes.
 
@@ -111,13 +114,113 @@ Esse processo de atribuição de códigos é repetido até chegarmos a um nó fo
 
 
 ## 🕗 Tempo:
-Os tempos obtidos foram em nanosegundos visto que sua implemntação se deu muito rapida, com isso foi possivel obter o valor de numero para a montagem das arvores AVL, binarias e codigo huffman, a que apresentou melhores resultados foi a arovre binaria com um tempo medio de : XXXXX, o motivo de ela ter sido mais rapida de todas esta diretamente ligado ao fato da forma como os dados estão sendo inseridos visto que a arovre binaria se encontra muito desequilibrada e n realiza rotações, por mais que a AVL tenha gasto nanosegundos a mais sua eficiencia é garantida principalmnte nas operações de busca remoção, algo que pela binaria não ocorre muito bem. O codigo huffman foi o mais demorado em relação aos outros e isso se da tambem devido a como é realizado sua montagem, levando à uma piora no quesito tempo.
+Os tempos obtidos foram em nanosegundos visto que sua implemntação se deu muito rapida, com isso foi possivel obter o valor de numero para a montagem das arvores AVL, binarias e codigo huffman, a que apresentou melhores resultados foi a arovre binaria com um tempo medio de : XXXXX, esse tempo foi medido atraves de 10 compilações do programa, o motivo de ela ter sido mais rapida de todas esta diretamente ligado ao fato da forma como os dados estão sendo inseridos visto que a arovre binaria se encontra muito desequilibrada e não realiza rotações, por mais que a AVL tenha gasto nanosegundos a mais sua eficiencia é garantida principalmnte nas operações de busca remoção, algo que pela binaria não ocorre muito bem. O codigo huffman foi o mais demorado em relação aos outros e isso se da tambem devido a como é realizado sua montagem, levando à uma piora no quesito tempo.
 
 ## RESULTADOS E ANÁLISE
-Antes de procedermos com qualquer análise, é crucial ter em mente que os resultados dos testes podem variar consideravelmente dependendo das máquinas em que o programa é executado. Conforme a intuição sugere, máquinas mais poderosas tendem a produzir resultados superiores. Para referência, os testes a seguir foram realizados em um computador com as seguintes especificações: processador {modelo do processador}, {quantidade de memória RAM} de RAM e GPU {modelo da GPU}.
+Antes de procedermos com qualquer análise, é crucial ter em mente que os resultados dos testes podem variar consideravelmente dependendo das máquinas em que o programa é executado. Conforme a intuição sugere, máquinas mais poderosas tendem a produzir resultados superiores.
+Os resultados mostrados nessa seção são retirados dos textos que ja se encontram na pasta `data`.
+O formato de saída dos textos no arquivo `output.data` são realizados da seguinte maneira: 
+- Mostrado o texto em que se encontra atualmente
+- A palavra que esta sendo lida no momento e sua respectiva frequencia no texto em questão
+- A construção da árvore binária, sendo feita de forma crescente de frequencia.
+- A construção da árvore AVL e tambem sendo impressa na ordem crescente de frequencia.
+- Codificação de huffman com a palavra e seu respectivo código formado.
 
-Referencia
+(FOTO DO OUTPUT)
 
-https://www.freecodecamp.org/portuguese/news/tudo-o-que-voce-precisa-saber-sobre-estruturas-de-dados-em-arvore/#:~:text=Uma%20%C3%A1rvore%20%C3%A9%20um%20conjunto,%C3%A1rvore%20%C3%A9%20chamado%20de%20raiz%20.
+Já em casos em que a palavra que esta sendo processada não contém no texto lido a saída fica da seguinte maneira:
+- É mostrado ao usuario ainda o texto em que se encontra e a palavra processada e sua frequencia como zero
+- É exibido ao usuário a seguinte mensagem: 'THIS WORD DOESN'T EXIST IN THIS FILE'
+- As arvores recebem NULL
 
-https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/huffman.html
+(FOTO DO OUTPUT QUANDO A PALAVRA NAO EXISTE)
+
+## 📈 Conclusões:
+A tarefa de extrair as K palavras mais frequentes de um texto e organizá-las em árvores binárias, árvores AVL e códigos Huffman é uma atividade que oferece a oportunidade de investigar diversas estruturas de dados e algoritmos fundamentais na área da computação. Cada uma dessas estruturas possui suas próprias características vantajosas e é mais apropriada para cenários específicos.
+
+<h4>Árvore Binária:</h4>
+<b>Vantagens:</b>
+
+- A implementação de uma árvore binária é relativamente simples, o que a torna fácil de entender e depurar.
+- Pode ser adequada para um pequeno conjunto de palavras frequentes.
+- Bom quando a quantidade de palavras frequentes é pequena.
+- Bom quando a simplicidade da implementação é mais importante do que a eficiência na busca
+
+<b>Desvantagens:</b>
+
+- O desempenho de uma árvore binária pode se tornar ineficiente em grandes conjuntos de dados não balanceados, levando a operações de busca e inserção de tempo linear no pior caso.
+
+
+<h4>Árvore AVL:</h4>
+<b>Vantagens:</b>
+
+- Garante que a árvore esteja balanceada, garantindo eficiência nas operações de busca.
+- Útil quando a lista de palavras frequentes é grande e dinâmica.
+- Bom quando a lista de palavras frequentes é grande e precisa ser atualizada regularmente.
+- Bom quando a eficiência na busca é fundamental.
+- As operações de busca, inserção e remoção em árvores AVL têm tempo de execução logarítmico no pior caso, tornando-as adequadas para grandes conjuntos de dados.
+
+<b>Desvantagens:</b>
+
+- A implementação de árvores AVL é mais complexa do que a de árvores binárias simples.
+- Elas podem consumir mais memória devido à necessidade de manter informações de balanceamento adicionais.
+
+
+<h4>Código Huffman:</h4>
+<b>Vantagens:</b>
+
+- Compactação eficiente de dados, especialmente quando as palavras frequentes têm diferentes comprimentos de código.
+- Ótimo para economizar espaço de armazenamento.
+- Bom quando a economia de espaço é crítica.
+
+<b>Desvantagens: </b>
+
+- A decodificação de dados comprimidos com códigos Huffman pode ser mais complexa em comparação com outras técnicas de compressão.
+- Em situações em que as frequências dos elementos são uniformes, os códigos Huffman podem não oferecer muita compressão.
+
+
+Quando se trata de determinar a melhor opção para cada situação, podemos chegar às seguintes conclusões:
+
+Se você está lidando com um conjunto pequeno e estático de palavras frequentes, uma árvore binária pode ser suficiente devido à sua simplicidade.
+Quando o conjunto de palavras frequentes é grande e sujeito a mudanças frequentes, uma árvore AVL é mais apropriada para garantir um desempenho eficaz nas operações de busca.
+Se a economia de espaço de armazenamento é uma prioridade, especialmente quando as palavras frequentes possuem comprimentos de código variáveis, a escolha ideal é um código Huffman.
+
+Além disso, essa atividade oferece oportunidades de aprendizado como:
+
+- Adquirir experiência na implementação de várias estruturas de dados e algoritmos.
+- Compreendam as vantagens e desvantagens de cada estrutura de dados em diferentes contextos. 
+- Aprender sobre otimização e eficiência no uso de espaço, através da aplicação de códigos Huffman.
+- Desenvolvam habilidades de resolução de problemas ao enfrentar desafios práticos relacionados ao processamento de texto e manipulação de dados.
+
+Resumindo, essa atividade proporciona uma valiosa oportunidade para explorar e aplicar conceitos fundamentais de estruturas de dados e algoritmos, ao mesmo tempo em que promove a compreensão das situações em que cada estrutura é mais apropriada.
+
+  
+## ✔️Referencia
+
+- https://www.freecodecamp.org/portuguese/news/tudo-o-que-voce-precisa-saber-sobre-estruturas-de-dados-em arvore/#:~:text=Uma%20%C3%A1rvore%20%C3%A9%20um%20conjunto,%C3%A1rvore%20%C3%A9%20chamado%20de%20raiz%20.
+
+- https://www.ime.usp.br/~pf/analise_de_algoritmos/aulas/huffman.html
+
+## 👾Compilação e execução
+
+O codigo disponibilizado foi criado e executado em notebook Acer core i5 Aspire M com sistema operacional Windowns 10 e utlizado um terminal de comando com WSL.
+
+O codigo possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+
+
+| Comando                |  Função                                                                                           |                     
+| -----------------------| ------------------------------------------------------------------------------------------------- |
+|  `make clean`          | Apaga a última compilação realizada contida na pasta build                                        |
+|  `make`                | Executa a compilação do programa utilizando o g++, e o resultado vai para a pasta build           |
+|  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
+
+
+## ✉️Contato
+<div>
+ <br><p align="justify"> Jullia Fernandes Felizardo</p>
+ <a href="https://t.me/JulliaFernandes">
+ <img align="center" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> 
+ </div>
+<a style="color:black" href="mailto:julliacefet@gmail.com?subject=[GitHub]%20Source%20Dynamic%20Lists">
+✉️ <i>julliacefet@gmail.com</i>
+</a>

@@ -175,7 +175,7 @@ void callingBuildFunctions(vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, N
             auto end = chrono::high_resolution_clock::now();
 
             auto duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
-            cout << "Tempo para buildBinaryTree: " << duration.count() << " nanossegundos" << endl;
+            //cout << "Tempo para buildBinaryTree: " << duration.count() << " nanossegundos" << endl;
             
 
             start = chrono::high_resolution_clock::now();
@@ -183,7 +183,7 @@ void callingBuildFunctions(vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, N
             end = chrono::high_resolution_clock::now();
 
             duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
-            cout << "Tempo para insertTree: " << duration.count() << " nanossegundos" << endl;
+            //cout << "Tempo para insertTree: " << duration.count() << " nanossegundos" << endl;
     }   
 }
 
@@ -504,7 +504,7 @@ void insertTree(Node *&t, WordInfo r){
       }
     }
 
-    if(r.occurrences >= (t)->words.occurrences){
+    else if(r.occurrences >= (t)->words.occurrences){
         //cout << "veio?? 3 " << t->words.word  << "- " << r.word << endl;
       insertTree((t)->right_son, r);
       if ((getWeight((t)->right_son) - getWeight((t)->left_son)) == 2){
@@ -619,10 +619,12 @@ void HuffmanTree(priority_queue<Node*, vector<Node*>, Compare> &fifo)
 
         left = fifo.top();
         fifo.pop();
+        cout << "fifosize: " << fifo.size() << endl;
         //cout << "----WORD: " << left->words.word << endl;
 
         right = fifo.top();
         fifo.pop();
+        cout << "2fifosize: " << fifo.size() << endl;
         //cout << "----WORD2: " << right->words.word << endl;
 
         newNode.words.word = "\0";
@@ -634,9 +636,11 @@ void HuffmanTree(priority_queue<Node*, vector<Node*>, Compare> &fifo)
         mergedNode->right_son = right;
 
         fifo.push(mergedNode);
+        cout << "3fifosize: " << fifo.size() << endl;
 
         // cout << "*************" << endl;
-        // printQueue(fifo);
+        printQueue(fifo);
+        cout << "*************" << endl;
     }
 }
 
@@ -685,7 +689,7 @@ void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Com
     //cout << "------------------[CODIGO HUFFMAN]----------" << endl;
     putWordsInQueue(heap_aux, fifo);
     //cout << "\nFIFO" << endl;
-    //printQueue(fifo);
+    printQueue(fifo);
 
     HuffmanTree(fifo);
 

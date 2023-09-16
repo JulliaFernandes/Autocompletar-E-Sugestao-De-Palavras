@@ -54,13 +54,16 @@ Foi utlizado tambem expressões regulares como `Regex` e para a manipulação do
 
 A partir disso é possivel implementar varias tipos de arvores, como a AVL, a binária a Red-Black-Tree, mas tendo suas mudanças cada uma.
 
+(IMAGEM DA BINARAI E AVL)
+
+
 <h4><em>Codificação de Huffman</em></h4>
 Uma árvore de Huffman é uma estrutura binária na qual cada nó interno possui exatamente dois filhos. Importante notar que as árvores de Huffman não consideram a relação de ordem (esquerda ou direita) entre os filhos de um nó.<br>
 Uma árvore binária completa, conhecida como árvore de Huffman, é construída de forma recursiva combinando os dois símbolos de menor probabilidade. Esses símbolos, os utilizados nesse trabalho foi o simbolo de vazio: '/0', são agrupados em novamente com o restante dos simbolos. Esse processo é repetido até que todos os símbolos tenham sido agrupados em símbolos auxiliares, formando assim uma árvore binária. Posteriormente, a árvore é percorrida e valores binários, 1 ou 0, são atribuídos a cada aresta. Os códigos são então gerados com base nesse percurso, sendo o 0 a ida para a esquerda e 1 a ida para a direita.
 
 
 
-
+(IMAGEM DE COMO É O HUFFMAN)
 
 
 
@@ -114,7 +117,7 @@ Esse processo de atribuição de códigos é repetido até chegarmos a um nó fo
 
 
 ## 🕗 Tempo:
-Os tempos obtidos foram em nanosegundos visto que sua implemntação se deu muito rapida, com isso foi possivel obter o valor de numero para a montagem das arvores AVL, binarias e codigo huffman, a que apresentou melhores resultados foi a arovre binaria com um tempo medio de : XXXXX, esse tempo foi medido atraves de 10 compilações do programa, o motivo de ela ter sido mais rapida de todas esta diretamente ligado ao fato da forma como os dados estão sendo inseridos visto que a arovre binaria se encontra muito desequilibrada e não realiza rotações, por mais que a AVL tenha gasto nanosegundos a mais sua eficiencia é garantida principalmnte nas operações de busca remoção, algo que pela binaria não ocorre muito bem. O codigo huffman foi o mais demorado em relação aos outros e isso se da tambem devido a como é realizado sua montagem, levando à uma piora no quesito tempo.
+Os tempos obtidos foram em nanosegundos visto que sua implementação se deu muito rapida, com isso foi possivel obter o valor de numero para a montagem das arvores AVL, binarias e codigo huffman, a que apresentou melhores resultados foi a arovre binaria com um tempo medio de : XXXXX, esse tempo foi medido atraves de 10 compilações do programa, o motivo de ela ter sido mais rapida de todas esta diretamente ligado ao fato da forma como os dados estão sendo inseridos visto que a arovre binaria se encontra muito desequilibrada e não realiza rotações, por mais que a AVL tenha gasto nanosegundos a mais sua eficiencia é garantida principalmnte nas operações de busca remoção, algo que pela binaria não ocorre muito bem. O codigo huffman foi o mais demorado em relação aos outros e isso se da tambem devido a como é realizado sua montagem, levando à uma piora no quesito tempo.
 
 ## RESULTADOS E ANÁLISE
 Antes de procedermos com qualquer análise, é crucial ter em mente que os resultados dos testes podem variar consideravelmente dependendo das máquinas em que o programa é executado. Conforme a intuição sugere, máquinas mais poderosas tendem a produzir resultados superiores.

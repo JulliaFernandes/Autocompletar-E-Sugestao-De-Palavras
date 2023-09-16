@@ -76,10 +76,8 @@ void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glo
     newHeap = heap;
     bool okay;
 
-    cout << "função: " << newInfos.wordSelect << " FREQ: " << newInfos.frequencyWord << endl;
-
     for(int i= 0; i< (int)word_select.size(); i++ ){
-        cout << "------word: " << word_select[i] << endl;
+        cout << "--> word: " << word_select[i] << endl;
         if(glossary.find(word_select[i]) != glossary.end()){
             okay = false;
             for(int j=0; j<(int)newHeap.size(); j++){
@@ -152,7 +150,6 @@ void fillHeap(vector<WordInfo*> heap, const unordered_map<string, WordInfo>& glo
             outputFile(fileName, newInfos, "data/Output.data");
         }
         newHeap = heap;
-        cout << "AAAAAAAAAAA" << endl;
         cleaningVariables(heap_aux, encHuffman ,rootBT, rootAVL, newInfos, fifo);
     }
 }
@@ -457,9 +454,6 @@ void getWordsSelect(vector<string>&wordsSelect)
         if(!filewordsSelect.eof()){
             line.pop_back();
         }
-        // WordInfo newWord;
-        // newWord.occurrences = 1;
-        // newWord.word = line;
         string newWord;
         newWord = line;
 
@@ -479,26 +473,19 @@ void insertTree(Node *&t, WordInfo r){
     (t)->right_son  = NULL; 
     (t)->weight = 0;
     (t)->words   = r; 
-    //cout << "veio?? " << t->words.word << "- " << r.word << endl;
 
   } 
   else {
     
     if(r.occurrences < (t)->words.occurrences){
-        //cout << "veio?? 2 " << t->words.word << "- " << r.word << endl;
         insertTree((t)->left_son, r);
       if ((getWeight((t)->left_son) - getWeight((t)->right_son)) == 2){
-        //cout << "GET HEIGHT 2 " <<  getWeight((t)->left_son) - getWeight((t)->right_son) << endl;
       	if(r.occurrences < (t)->left_son->words.occurrences){
-            //cout << "ntrou " <<  t->words.word << "- " << r.word << endl;
             rotacaoSimplesDireita(t);
-            //cout << "saiu?? " << t->words.word << "- " << r.word << endl;
         }
       		
       	else{
-            //cout << "ntrou 2" << t->words.word << "- " << r.word << endl;
             rotacaoDuplaDireita(t);
-            //cout << "siu 2" << t->words.word << "- " << r.word << endl;
         }
       		
       }
@@ -597,7 +584,6 @@ void putWordsInQueue(vector<Node*>heap, priority_queue<Node*, vector<Node*>, Com
 {
     for(auto entry : heap){
         fifo.push(entry);
-        //fifo.push(entry.second); //Qaundo é o sem ponteiro
 	}
 }
 
@@ -605,7 +591,6 @@ void printQueue(priority_queue<Node*, vector<Node*>, Compare> fifo)
 {
     while(!fifo.empty())
     {
-        cout << "Caractere: " << fifo.top()->words.word << " Frequency: " << fifo.top()->words.occurrences << endl;
         fifo.pop();
     }
 }
@@ -619,28 +604,19 @@ void HuffmanTree(priority_queue<Node*, vector<Node*>, Compare> &fifo)
 
         left = fifo.top();
         fifo.pop();
-        cout << "fifosize: " << fifo.size() << endl;
-        //cout << "----WORD: " << left->words.word << endl;
 
         right = fifo.top();
         fifo.pop();
-        cout << "2fifosize: " << fifo.size() << endl;
-        //cout << "----WORD2: " << right->words.word << endl;
 
         newNode.words.word = "\0";
         newNode.words.occurrences = left->words.occurrences + right->words.occurrences;
-        //cout << "OCURRENCES: " << newNode.words.occurrences << endl;
 
         Node* mergedNode = new Node(newNode);
         mergedNode->left_son = left;
         mergedNode->right_son = right;
 
         fifo.push(mergedNode);
-        cout << "3fifosize: " << fifo.size() << endl;
-
-        // cout << "*************" << endl;
         printQueue(fifo);
-        cout << "*************" << endl;
     }
 }
 
@@ -663,52 +639,38 @@ void buildHuffmanCodes(Node* root, string code, vector<pair<string, string>> &en
     if (!root)
         return;
 
-    //if (root->huffman_node.carac != '\0') huffmanCodes[root->huffman_node.carac] = code;
-
     code.push_back('0');
     buildHuffmanCodes(root->left_son, code, encHuffman);
     code.pop_back(); // Remove o último caractere ("0") após retornar da chamada recursiva à esquerda
     
-    //cout << "CODE: " << code << endl;
-    // Adiciona "1" ao caminho
     code.push_back('1');
     buildHuffmanCodes(root->right_son, code, encHuffman);
     code.pop_back(); // Remove o último caractere ("1") após retornar da chamada recursiva à direita
 
-    //cout << "1CODE: " << code << endl;
-    // Se o nó atual não tiver filhos (for uma folha), armazene o código binário no mapa
     if (root->left_son == nullptr && root->right_son == nullptr) {
         encHuffman.push_back(make_pair(code, root->words.word));
-        //huffmanCodes[root->words.word] = code;
         indexHuffman++; 
     }
 }
 
 void HuffmanCode(vector<Node*>heap_aux, priority_queue<Node*, vector<Node*>, Compare> &fifo, string code, vector<pair<string, string>> &encHuffman)
 {
-    //cout << "------------------[CODIGO HUFFMAN]----------" << endl;
     putWordsInQueue(heap_aux, fifo);
-    //cout << "\nFIFO" << endl;
     printQueue(fifo);
 
     HuffmanTree(fifo);
 
     //cout << "FILA " << endl;
     //printPreOrder(fifo.top());
-    cout << "--------------------------------------------------" << endl;
 
-    //string code="";
+    // cout << "--------------------------------------------------" << endl;
+
     buildHuffmanCodes(fifo.top(), code, encHuffman);
-    cout << "CODIFICAÇÃO HUFFMAN" << endl;
-
-    // for(auto entry: encodedHuffman){
+    // cout << "CODIFICAÇÃO HUFFMAN" << endl;
+    // for(auto entry: encHuffman){
     //     cout << "CHAR: " << entry.first << " CODE: " << entry.second << endl;
     // }
-    cout << "---ENC HUFFMAN" << endl;
-    for(auto entry: encHuffman){
-        cout << "CHAR: " << entry.first << " CODE: " << entry.second << endl;
-    }
-    cout << "--------------------------------------------------" << endl;
+    // cout << "--------------------------------------------------" << endl;
 }
 
 void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
@@ -721,7 +683,6 @@ void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
 
     outputFile << "FILE: " << fileName << endl;
     if(info_files.frequencyWord != 0){
-        //outputFile << "FILE \t\t\t\t WORD \t\t FREQUENCY \t\t BINARY TREE IN ORDER \t\t\t\t\t\t\t\t\t\t\t\t\t\t AVL TREE BY LEVEL \t\t\t\t\t\t\t\t\t\t\t\t\t\t "
         outputFile << "WORD \t\t FREQEUNCY" << endl;
         outputFile << ">" << info_files.wordSelect << "\t\t    " << info_files.frequencyWord << endl;
         outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
@@ -731,21 +692,16 @@ void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
         printOrder(info_files.rootAVL, outputFile);
         //printLevels(info_files.rootAVL, outputFile); 
         outputFile << "\n\n-----HUFFMAN CODES-----" << endl;
-        // for(auto entry: info_files.encodedHuffman){
-        //     outputFile <<  entry.first << ": " << entry.second <<" || ";
-        //     //outputFile << "WORD: " << entry.first << " CODE: " << entry.second;
 
-        // }
         for(auto entry: info_files.encHuffman){
             outputFile <<  entry.first << ": " << entry.second <<" || ";
-            //outputFile << "WORD: " << entry.first << " CODE: " << entry.second;
 
         }
-        outputFile << "\n---------------------------------------------------------------------------------------" << endl << endl;
+        outputFile << "\n-----------------------------------------------------------------------------------------------------------------------" << endl << endl;
     }
     else{
         outputFile << "WORD \t\t FREQEUNCY" << endl;
-         outputFile << ">" << info_files.wordSelect << "\t\t    " << info_files.frequencyWord << endl;
+        outputFile << ">" << info_files.wordSelect << "\t\t    " << info_files.frequencyWord << endl;
         outputFile << "THIS WORD DOESN'T EXIST IN THIS FILE" << endl;
         outputFile << "-----BINARY TREE BY LEVEL-----" << endl;
         outputFile << "\t\tNULL" << endl;
@@ -753,7 +709,7 @@ void outputFile(const string fileName, FilesInfo info_files, string OutputFinal)
         outputFile << "\t\tNULL" << endl;
         outputFile << "\n-----HUFFMAN CODES-----" << endl;
         outputFile << "\t\tNULL" << endl;
-        outputFile << "---------------------------------------------------------------------------------------" << endl << endl;
+        outputFile << "-----------------------------------------------------------------------------------------------------------------------" << endl << endl;
     }
     
 

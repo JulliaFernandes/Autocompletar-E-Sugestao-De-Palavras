@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#define k 21 //QUANTIDADE DE ELEMENTOS DE MAIOR FREQUENCIA
+#define k 11 //QUANTIDADE DE ELEMENTOS DE MAIOR FREQUENCIA
 #define ARQ 6 //QUANTIDADE DE ARQUIVOS A SEREM PROCESSADOS
 
 int main()
@@ -42,6 +42,7 @@ int main()
 
     for(int i=1; i<=ARQ; i++){
         string fileName = "data/input" + to_string(i) + ".txt";
+        cout << "FILE: " << fileName << endl;
         readText(fileName, file, glossary, glossaryStopWords);
 
         creatHeap(heap, glossary, k);
@@ -51,7 +52,7 @@ int main()
         heap.clear();
         newHeap.clear();
         heap_aux.clear();
-        cout << "MAIN: " << newInfos.wordSelect << " FREQ: " << newInfos.frequencyWord << endl;
+        
         newInfos.wordSelect="";
         newInfos.frequencyWord =0;
         while (!fifo.empty()) {

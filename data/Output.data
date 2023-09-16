@@ -2,66 +2,66 @@ FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >teoria		    176
 -----BINARY TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || 
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || 
 
 -----AVL TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || 
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || 
 
 -----HUFFMAN CODES-----
-0000: vista || 0001: imanente || 0010: sentido || 0011: segundo || 0100: sobre || 0101: pensamento || 0110: sistema || 0111: priori || 1000: modo || 1001: condição || 1010: mundo || 1011: sujeito || 11000: realidade || 11001: princípio || 11010: virtual || 11011: assim || 11100: maneira || 11101: wittgenstein || 11110: pode || 11111: quanto || 
----------------------------------------------------------------------------------------
+000: pensamento || 001: priori || 010: modo || 011: mundo || 100: condição || 101: sujeito || 1100: sentido || 1101: segundo || 1110: sobre || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >sujeito		    145
 -----BINARY TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || teoria: 176 || 
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || teoria: 176 || 
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-0000: vista || 0001: imanente || 0010: sentido || 0011: segundo || 0100: sobre || 0101: pensamento || 0110: sistema || 0111: priori || 1000: modo || 1001: condição || 1010: mundo || 1011: teoria || 11000: realidade || 11001: princípio || 11010: virtual || 11011: assim || 11100: maneira || 11101: wittgenstein || 11110: pode || 11111: quanto || 
----------------------------------------------------------------------------------------
+000: pensamento || 001: priori || 010: modo || 011: mundo || 100: condição || 101: teoria || 1100: sentido || 1101: segundo || 1110: sobre || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >priori		    125
 -----BINARY TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-0000: vista || 0001: imanente || 0010: sentido || 0011: segundo || 0100: sobre || 0101: pensamento || 0110: sistema || 0111: modo || 1000: condição || 1001: mundo || 1010: sujeito || 1011: teoria || 11000: realidade || 11001: princípio || 11010: virtual || 11011: assim || 11100: pode || 11101: quanto || 11110: maneira || 11111: wittgenstein || 
----------------------------------------------------------------------------------------
+000: pensamento || 001: modo || 010: mundo || 011: condição || 100: sujeito || 101: teoria || 1100: sentido || 1101: segundo || 1110: sobre || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >processo		    57
 -----BINARY TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: segundo || 0011: sobre || 0100: pensamento || 0101: sistema || 0110: priori || 0111: modo || 1000: condição || 1001: mundo || 1010: sujeito || 1011: teoria || 11000: princípio || 11001: virtual || 11010: assim || 11011: quanto || 11100: maneira || 11101: wittgenstein || 11110: pode || 11111: vista || 
----------------------------------------------------------------------------------------
+000: priori || 001: modo || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sobre || 1101: segundo || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >assim		    94
 -----BINARY TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sentido: 110 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-realidade: 91 || princípio: 91 || virtual: 93 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sentido: 110 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: sentido || 0011: segundo || 0100: pensamento || 0101: sistema || 0110: priori || 0111: modo || 1000: condição || 1001: mundo || 1010: sujeito || 1011: teoria || 11000: realidade || 11001: princípio || 11010: virtual || 11011: quanto || 11100: maneira || 11101: wittgenstein || 11110: pode || 11111: vista || 
----------------------------------------------------------------------------------------
+000: priori || 001: modo || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sobre || 1101: segundo || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
@@ -75,20 +75,20 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >político		    36
 -----BINARY TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: segundo || 0011: sobre || 0100: pensamento || 0101: sistema || 0110: priori || 0111: modo || 1000: condição || 1001: mundo || 1010: sujeito || 1011: teoria || 11000: princípio || 11001: virtual || 11010: assim || 11011: quanto || 11100: maneira || 11101: wittgenstein || 11110: pode || 11111: vista || 
----------------------------------------------------------------------------------------
+000: priori || 001: modo || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sobre || 1101: segundo || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
@@ -102,7 +102,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
@@ -116,7 +116,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
@@ -130,98 +130,98 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >dados		    19
 -----BINARY TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: segundo || 0011: sobre || 0100: pensamento || 0101: sistema || 0110: priori || 0111: modo || 1000: condição || 1001: mundo || 1010: sujeito || 1011: teoria || 11000: princípio || 11001: virtual || 11010: assim || 11011: quanto || 11100: maneira || 11101: wittgenstein || 11110: pode || 11111: vista || 
----------------------------------------------------------------------------------------
+000: priori || 001: modo || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sobre || 1101: segundo || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input1.txt
 WORD 		 FREQEUNCY
 >filosofia		    19
 -----BINARY TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----AVL TREE BY LEVEL-----
-princípio: 91 || virtual: 93 || assim: 94 || wittgenstein: 95 || maneira: 95 || quanto: 95 || pode: 95 || vista: 96 || imanente: 104 || sentido: 110 || sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
+sobre: 114 || segundo: 114 || pensamento: 115 || sistema: 115 || priori: 125 || modo: 129 || condição: 134 || mundo: 134 || sujeito: 145 || teoria: 176 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: segundo || 0011: sobre || 0100: pensamento || 0101: sistema || 0110: priori || 0111: modo || 1000: condição || 1001: mundo || 1010: sujeito || 1011: teoria || 11000: princípio || 11001: virtual || 11010: assim || 11011: quanto || 11100: maneira || 11101: wittgenstein || 11110: pode || 11111: vista || 
----------------------------------------------------------------------------------------
+000: priori || 001: modo || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sobre || 1101: segundo || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >teoria		    192
 -----BINARY TREE BY LEVEL-----
-relação: 89 || infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || 
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || 
 
 -----AVL TREE BY LEVEL-----
-relação: 89 || infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || 
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || 
 
 -----HUFFMAN CODES-----
-0000: princípio || 0001: imanente || 0010: sentido || 0011: segundo || 0100: sobre || 0101: pensamento || 0110: sistema || 0111: modo || 1000: condição || 1001: mundo || 1010: priori || 1011: sujeito || 11000: relação || 11001: infinito || 11010: respeito || 11011: vista || 11100: wittgenstein || 11101: maneira || 11110: possível || 11111: pode || 
----------------------------------------------------------------------------------------
+000: sistema || 001: modo || 010: condição || 011: mundo || 100: priori || 101: sujeito || 1100: sentido || 1101: segundo || 1110: sobre || 1111: pensamento || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >sujeito		    149
 -----BINARY TREE BY LEVEL-----
-relação: 89 || infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || teoria: 192 || 
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-relação: 89 || infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || teoria: 192 || 
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-0000: princípio || 0001: imanente || 0010: sentido || 0011: sobre || 0100: segundo || 0101: pensamento || 0110: sistema || 0111: modo || 1000: condição || 1001: mundo || 1010: priori || 10110: relação || 10111: infinito || 11000: respeito || 11001: vista || 11010: wittgenstein || 11011: maneira || 11100: possível || 11101: pode || 1111: teoria || 
----------------------------------------------------------------------------------------
+000: sistema || 001: modo || 010: condição || 011: mundo || 100: priori || 101: teoria || 1100: sentido || 1101: segundo || 1110: sobre || 1111: pensamento || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >priori		    144
 -----BINARY TREE BY LEVEL-----
-relação: 89 || infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-relação: 89 || infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-0000: princípio || 0001: imanente || 0010: sentido || 0011: sobre || 0100: segundo || 0101: pensamento || 0110: sistema || 0111: modo || 1000: condição || 1001: mundo || 1010: sujeito || 10110: relação || 10111: infinito || 11000: respeito || 11001: vista || 11010: wittgenstein || 11011: maneira || 11100: possível || 11101: pode || 1111: teoria || 
----------------------------------------------------------------------------------------
+000: sistema || 001: modo || 010: condição || 011: mundo || 100: sujeito || 101: teoria || 1100: sentido || 1101: segundo || 1110: sobre || 1111: pensamento || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >processo		    58
 -----BINARY TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: sobre || 0011: segundo || 0100: pensamento || 0101: sistema || 0110: modo || 0111: condição || 1000: mundo || 1001: priori || 1010: sujeito || 10110: infinito || 10111: respeito || 11000: maneira || 11001: wittgenstein || 11010: possível || 11011: vista || 1110: teoria || 11110: pode || 11111: princípio || 
----------------------------------------------------------------------------------------
+000: modo || 001: condição || 010: mundo || 011: priori || 100: sujeito || 101: teoria || 1100: segundo || 1101: sobre || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >assim		    86
 -----BINARY TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: sobre || 0011: segundo || 0100: pensamento || 0101: sistema || 0110: modo || 0111: condição || 1000: mundo || 1001: priori || 1010: sujeito || 10110: infinito || 10111: respeito || 11000: maneira || 11001: wittgenstein || 11010: possível || 11011: vista || 1110: teoria || 11110: pode || 11111: princípio || 
----------------------------------------------------------------------------------------
+000: modo || 001: condição || 010: mundo || 011: priori || 100: sujeito || 101: teoria || 1100: segundo || 1101: sobre || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
@@ -235,20 +235,20 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >político		    38
 -----BINARY TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: sobre || 0011: segundo || 0100: pensamento || 0101: sistema || 0110: modo || 0111: condição || 1000: mundo || 1001: priori || 1010: sujeito || 10110: infinito || 10111: respeito || 11000: maneira || 11001: wittgenstein || 11010: possível || 11011: vista || 1110: teoria || 11110: pode || 11111: princípio || 
----------------------------------------------------------------------------------------
+000: modo || 001: condição || 010: mundo || 011: priori || 100: sujeito || 101: teoria || 1100: segundo || 1101: sobre || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
@@ -262,7 +262,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
@@ -276,7 +276,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
@@ -290,33 +290,33 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >dados		    19
 -----BINARY TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: sobre || 0011: segundo || 0100: pensamento || 0101: sistema || 0110: modo || 0111: condição || 1000: mundo || 1001: priori || 1010: sujeito || 10110: infinito || 10111: respeito || 11000: maneira || 11001: wittgenstein || 11010: possível || 11011: vista || 1110: teoria || 11110: pode || 11111: princípio || 
----------------------------------------------------------------------------------------
+000: modo || 001: condição || 010: mundo || 011: priori || 100: sujeito || 101: teoria || 1100: segundo || 1101: sobre || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input2.txt
 WORD 		 FREQEUNCY
 >filosofia		    19
 -----BINARY TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----AVL TREE BY LEVEL-----
-infinito: 89 || respeito: 90 || possível: 95 || wittgenstein: 95 || vista: 95 || maneira: 95 || pode: 96 || princípio: 97 || imanente: 109 || sentido: 111 || segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || priori: 144 || mundo: 144 || sujeito: 149 || teoria: 192 || 
+segundo: 114 || sobre: 114 || pensamento: 115 || sistema: 119 || modo: 129 || condição: 133 || mundo: 144 || priori: 144 || sujeito: 149 || teoria: 192 || 
 
 -----HUFFMAN CODES-----
-0000: imanente || 0001: sentido || 0010: sobre || 0011: segundo || 0100: pensamento || 0101: sistema || 0110: modo || 0111: condição || 1000: mundo || 1001: priori || 1010: sujeito || 10110: infinito || 10111: respeito || 11000: maneira || 11001: wittgenstein || 11010: possível || 11011: vista || 1110: teoria || 11110: pode || 11111: princípio || 
----------------------------------------------------------------------------------------
+000: modo || 001: condição || 010: mundo || 011: priori || 100: sujeito || 101: teoria || 1100: segundo || 1101: sobre || 1110: pensamento || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -330,7 +330,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -344,7 +344,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -358,59 +358,59 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
 >processo		    200
 -----BINARY TREE BY LEVEL-----
-determinação: 133 || geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || impacto: 134 || estabelecimento: 134 || quadros: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || assim: 199 || sentido: 200 || 
+necessidade: 134 || sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || assim: 199 || sentido: 200 || 
 
 -----AVL TREE BY LEVEL-----
-determinação: 133 || geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || impacto: 134 || estabelecimento: 134 || quadros: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || assim: 199 || sentido: 200 || 
+necessidade: 134 || sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || assim: 199 || sentido: 200 || 
 
 -----HUFFMAN CODES-----
-0000: sistema || 0001: melhoria || 0010: informações || 0011: estabelecimento || 0100: importância || 0101: necessidade || 0110: impacto || 0111: quadros || 1000: formas || 1001: pode || 1010: assim || 1011: sentido || 11000: determinação || 11001: geral || 11010: ressaltar || 11011: formação || 11100: condições || 11101: funcionais || 11110: modo || 11111: podemos || 
----------------------------------------------------------------------------------------
+000: podemos || 001: importância || 010: necessidade || 011: modo || 100: assim || 101: sentido || 1100: formas || 1101: melhoria || 1110: sistema || 1111: quadros || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
 >assim		    199
 -----BINARY TREE BY LEVEL-----
-determinação: 133 || geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || impacto: 134 || estabelecimento: 134 || quadros: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || processo: 200 || sentido: 200 || 
+necessidade: 134 || sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || processo: 200 || sentido: 200 || 
 
 -----AVL TREE BY LEVEL-----
-determinação: 133 || geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || impacto: 134 || estabelecimento: 134 || quadros: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || processo: 200 || sentido: 200 || 
+necessidade: 134 || sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || processo: 200 || sentido: 200 || 
 
 -----HUFFMAN CODES-----
-0000: quadros || 0001: importância || 0010: formas || 0011: sistema || 0100: melhoria || 0101: impacto || 0110: modo || 0111: podemos || 1000: necessidade || 1001: pode || 1010: processo || 1011: sentido || 11000: determinação || 11001: geral || 11010: condições || 11011: funcionais || 11100: formação || 11101: ressaltar || 11110: informações || 11111: estabelecimento || 
----------------------------------------------------------------------------------------
+000: podemos || 001: importância || 010: necessidade || 011: modo || 100: sentido || 101: processo || 1100: formas || 1101: melhoria || 1110: sistema || 1111: quadros || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
 >políticas		    67
 -----BINARY TREE BY LEVEL-----
-geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || estabelecimento: 134 || quadros: 134 || impacto: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || assim: 199 || processo: 200 || sentido: 200 || 
+sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || assim: 199 || processo: 200 || sentido: 200 || 
 
 -----AVL TREE BY LEVEL-----
-geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || estabelecimento: 134 || quadros: 134 || impacto: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || assim: 199 || processo: 200 || sentido: 200 || 
+sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || assim: 199 || processo: 200 || sentido: 200 || 
 
 -----HUFFMAN CODES-----
-0000: pode || 0001: sistema || 0010: importância || 0011: informações || 0100: melhoria || 0101: impacto || 0110: podemos || 0111: estabelecimento || 1000: modo || 1001: assim || 1010: sentido || 1011: processo || 11000: geral || 11001: condições || 11010: funcionais || 11011: ressaltar || 11100: formação || 11101: necessidade || 11110: quadros || 11111: formas || 
----------------------------------------------------------------------------------------
+000: podemos || 001: modo || 010: formas || 011: assim || 100: processo || 101: sentido || 1100: importância || 1101: quadros || 1110: sistema || 1111: melhoria || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
 >político		    66
 -----BINARY TREE BY LEVEL-----
-geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || estabelecimento: 134 || quadros: 134 || impacto: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || assim: 199 || processo: 200 || sentido: 200 || 
+sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || assim: 199 || processo: 200 || sentido: 200 || 
 
 -----AVL TREE BY LEVEL-----
-geral: 133 || formação: 133 || condições: 133 || ressaltar: 133 || funcionais: 133 || estabelecimento: 134 || quadros: 134 || impacto: 134 || podemos: 134 || modo: 134 || informações: 134 || importância: 134 || pode: 134 || necessidade: 134 || melhoria: 134 || sistema: 134 || formas: 134 || assim: 199 || processo: 200 || sentido: 200 || 
+sistema: 134 || modo: 134 || melhoria: 134 || quadros: 134 || podemos: 134 || formas: 134 || importância: 134 || assim: 199 || processo: 200 || sentido: 200 || 
 
 -----HUFFMAN CODES-----
-0000: pode || 0001: sistema || 0010: importância || 0011: informações || 0100: melhoria || 0101: impacto || 0110: podemos || 0111: estabelecimento || 1000: modo || 1001: assim || 1010: sentido || 1011: processo || 11000: geral || 11001: condições || 11010: funcionais || 11011: ressaltar || 11100: formação || 11101: necessidade || 11110: quadros || 11111: formas || 
----------------------------------------------------------------------------------------
+000: podemos || 001: modo || 010: formas || 011: assim || 100: processo || 101: sentido || 1100: importância || 1101: quadros || 1110: sistema || 1111: melhoria || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -424,7 +424,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -438,7 +438,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -452,7 +452,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -466,7 +466,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input3.txt
 WORD 		 FREQEUNCY
@@ -480,7 +480,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
@@ -494,7 +494,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
@@ -508,7 +508,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
@@ -522,59 +522,59 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
 >processo		    198
 -----BINARY TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || longo: 134 || importância: 134 || educação: 134 || prazo: 134 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
+política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || assim: 201 || saúde: 201 || melhoria: 201 || políticas: 267 || político: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || longo: 134 || importância: 134 || educação: 134 || prazo: 134 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
+política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || assim: 201 || saúde: 201 || melhoria: 201 || políticas: 267 || político: 400 || 
 
 -----HUFFMAN CODES-----
-0000: política || 0001: eleitores || 0010: metas || 0011: sentido || 010: político || 0110: atual || 0111: melhoria || 1000: assim || 1001: saúde || 1010: políticas || 10110: sistema || 10111: determinação || 11000: importância || 11001: geral || 11010: ainda || 11011: condições || 11100: longo || 11101: segurança || 11110: prazo || 11111: educação || 
----------------------------------------------------------------------------------------
+000: melhoria || 001: atual || 010: saúde || 011: assim || 100: políticas || 1010: política || 1011: eleitores || 1100: metas || 1101: sentido || 111: político || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
 >assim		    201
 -----BINARY TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || importância: 134 || educação: 134 || prazo: 134 || longo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
+processo: 198 || política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || saúde: 201 || políticas: 267 || político: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || importância: 134 || educação: 134 || prazo: 134 || longo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
+processo: 198 || política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || saúde: 201 || políticas: 267 || político: 400 || 
 
 -----HUFFMAN CODES-----
-0000: política || 0001: processo || 0010: eleitores || 0011: metas || 010: político || 0110: sentido || 0111: atual || 1000: melhoria || 1001: saúde || 1010: políticas || 10110: sistema || 10111: determinação || 11000: educação || 11001: ainda || 11010: geral || 11011: importância || 11100: prazo || 11101: condições || 11110: segurança || 11111: longo || 
----------------------------------------------------------------------------------------
+000: sentido || 001: atual || 010: saúde || 011: melhoria || 100: políticas || 1010: processo || 1011: política || 1100: eleitores || 1101: metas || 111: político || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
 >políticas		    267
 -----BINARY TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || importância: 134 || educação: 134 || prazo: 134 || longo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || político: 400 || 
+processo: 198 || política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || político: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || importância: 134 || educação: 134 || prazo: 134 || longo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || político: 400 || 
+processo: 198 || política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || político: 400 || 
 
 -----HUFFMAN CODES-----
-0000: política || 0001: processo || 0010: eleitores || 0011: metas || 010: político || 0110: sentido || 0111: saúde || 1000: atual || 1001: melhoria || 1010: assim || 10110: segurança || 10111: longo || 11000: sistema || 11001: determinação || 11010: geral || 11011: importância || 11100: condições || 11101: prazo || 11110: educação || 11111: ainda || 
----------------------------------------------------------------------------------------
+000: sentido || 001: atual || 010: assim || 011: melhoria || 100: saúde || 1010: processo || 1011: política || 1100: eleitores || 1101: metas || 111: político || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
 >político		    400
 -----BINARY TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || importância: 134 || educação: 134 || prazo: 134 || longo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || 
+processo: 198 || política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || políticas: 267 || 
 
 -----AVL TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || segurança: 134 || importância: 134 || educação: 134 || prazo: 134 || longo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || 
+processo: 198 || política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || políticas: 267 || 
 
 -----HUFFMAN CODES-----
-0000: geral || 0001: importância || 0010: política || 0011: processo || 0100: eleitores || 0101: metas || 0110: sentido || 0111: atual || 1000: melhoria || 1001: saúde || 1010: assim || 1011: políticas || 11000: sistema || 11001: determinação || 11010: segurança || 11011: longo || 11100: prazo || 11101: condições || 11110: educação || 11111: ainda || 
----------------------------------------------------------------------------------------
+000: sentido || 001: atual || 010: assim || 011: melhoria || 100: saúde || 101: políticas || 1100: processo || 1101: política || 1110: eleitores || 1111: metas || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
@@ -588,20 +588,20 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
 >segurança		    134
 -----BINARY TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || longo: 134 || importância: 134 || educação: 134 || prazo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
+política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || políticas: 267 || político: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sistema: 134 || ainda: 134 || determinação: 134 || geral: 134 || condições: 134 || longo: 134 || importância: 134 || educação: 134 || prazo: 134 || processo: 198 || política: 198 || metas: 199 || eleitores: 199 || sentido: 200 || saúde: 201 || assim: 201 || melhoria: 201 || atual: 201 || políticas: 267 || político: 400 || 
+política: 198 || eleitores: 199 || metas: 199 || sentido: 200 || atual: 201 || melhoria: 201 || assim: 201 || saúde: 201 || políticas: 267 || político: 400 || 
 
 -----HUFFMAN CODES-----
-0000: política || 0001: eleitores || 0010: metas || 0011: sentido || 010: político || 0110: atual || 0111: melhoria || 1000: assim || 1001: saúde || 1010: políticas || 10110: sistema || 10111: determinação || 11000: longo || 11001: condições || 11010: prazo || 11011: educação || 11100: ainda || 11101: geral || 11110: importância || 11111: processo || 
----------------------------------------------------------------------------------------
+000: melhoria || 001: atual || 010: saúde || 011: assim || 100: políticas || 1010: política || 1011: eleitores || 1100: metas || 1101: sentido || 111: político || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
@@ -615,7 +615,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
@@ -629,7 +629,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input4.txt
 WORD 		 FREQEUNCY
@@ -643,7 +643,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
@@ -657,7 +657,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
@@ -671,7 +671,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
@@ -685,46 +685,46 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >processo		    132
 -----BINARY TREE BY LEVEL-----
-causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
-causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----HUFFMAN CODES-----
-0000: melhor || 0001: impacto || 0010: desenvolvimento || 0011: sistema || 0100: aumento || 0101: informações || 0110: dados || 0111: ti || 1000: novas || 1001: implantação || 1010: segurança || 10110: causa || 10111: envolvidos || 11000: integridade || 11001: podemos || 11010: necessidade || 11011: assim || 11100: tempo || 11101: hardware || 1111: utilização || 
----------------------------------------------------------------------------------------
+000: informações || 001: novas || 010: dados || 011: implantação || 100: segurança || 101: utilização || 1100: sistema || 1101: melhor || 1110: desenvolvimento || 1111: ti || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >assim		    199
 -----BINARY TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || podemos: 134 || envolvidos: 134 || hardware: 199 || tempo: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || podemos: 134 || envolvidos: 134 || hardware: 199 || tempo: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----HUFFMAN CODES-----
-0000: melhor || 0001: impacto || 0010: desenvolvimento || 0011: sistema || 0100: aumento || 0101: informações || 0110: dados || 0111: ti || 1000: novas || 1001: implantação || 10100: podemos || 10101: necessidade || 10110: vez || 10111: integridade || 1100: segurança || 11010: envolvidos || 11011: causa || 11100: tempo || 11101: hardware || 1111: utilização || 
----------------------------------------------------------------------------------------
+000: informações || 001: novas || 010: dados || 011: implantação || 100: segurança || 101: utilização || 1100: sistema || 1101: melhor || 1110: desenvolvimento || 1111: ti || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >políticas		    67
 -----BINARY TREE BY LEVEL-----
-causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
-causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----HUFFMAN CODES-----
-0000: melhor || 0001: impacto || 0010: desenvolvimento || 0011: sistema || 0100: aumento || 0101: informações || 0110: dados || 0111: ti || 1000: novas || 1001: implantação || 1010: segurança || 10110: causa || 10111: envolvidos || 11000: integridade || 11001: podemos || 11010: necessidade || 11011: assim || 11100: tempo || 11101: hardware || 1111: utilização || 
----------------------------------------------------------------------------------------
+000: informações || 001: novas || 010: dados || 011: implantação || 100: segurança || 101: utilização || 1100: sistema || 1101: melhor || 1110: desenvolvimento || 1111: ti || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
@@ -738,59 +738,59 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >ti		    201
 -----BINARY TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || novas: 201 || informações: 201 || dados: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || novas: 201 || informações: 201 || dados: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----HUFFMAN CODES-----
-0000: assim || 0001: sistema || 0010: melhor || 0011: impacto || 0100: aumento || 0101: desenvolvimento || 0110: dados || 0111: novas || 1000: informações || 1001: implantação || 1010: segurança || 10110: vez || 10111: integridade || 11000: envolvidos || 11001: causa || 11010: necessidade || 11011: podemos || 11100: tempo || 11101: hardware || 1111: utilização || 
----------------------------------------------------------------------------------------
+000: informações || 001: novas || 010: dados || 011: implantação || 100: segurança || 101: utilização || 1100: aumento || 1101: desenvolvimento || 1110: melhor || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >segurança		    268
 -----BINARY TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || utilização: 399 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || utilização: 399 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || utilização: 399 || 
 
 -----HUFFMAN CODES-----
-0000: assim || 0001: melhor || 0010: aumento || 0011: desenvolvimento || 0100: sistema || 0101: impacto || 0110: informações || 0111: dados || 1000: novas || 1001: ti || 1010: implantação || 10110: vez || 10111: integridade || 11000: envolvidos || 11001: causa || 11010: necessidade || 11011: podemos || 11100: tempo || 11101: hardware || 1111: utilização || 
----------------------------------------------------------------------------------------
+000: novas || 001: ti || 010: informações || 011: dados || 100: implantação || 101: utilização || 1100: melhor || 1101: sistema || 1110: aumento || 1111: desenvolvimento || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >utilização		    399
 -----BINARY TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || 
 
 -----AVL TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || dados: 201 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || dados: 201 || informações: 201 || implantação: 266 || segurança: 268 || 
 
 -----HUFFMAN CODES-----
-0000: assim || 0001: sistema || 0010: melhor || 0011: impacto || 0100: aumento || 0101: desenvolvimento || 0110: ti || 0111: informações || 1000: dados || 1001: novas || 1010: implantação || 1011: segurança || 11000: vez || 11001: integridade || 11010: envolvidos || 11011: causa || 11100: necessidade || 11101: podemos || 11110: tempo || 11111: hardware || 
----------------------------------------------------------------------------------------
+000: novas || 001: ti || 010: informações || 011: dados || 100: implantação || 101: segurança || 1100: aumento || 1101: desenvolvimento || 1110: melhor || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
 >dados		    201
 -----BINARY TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----AVL TREE BY LEVEL-----
-vez: 134 || causa: 134 || integridade: 134 || necessidade: 134 || envolvidos: 134 || podemos: 134 || assim: 199 || tempo: 199 || hardware: 199 || desenvolvimento: 200 || aumento: 200 || impacto: 200 || sistema: 200 || melhor: 200 || informações: 201 || novas: 201 || ti: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
+aumento: 200 || sistema: 200 || desenvolvimento: 200 || melhor: 200 || ti: 201 || novas: 201 || informações: 201 || implantação: 266 || segurança: 268 || utilização: 399 || 
 
 -----HUFFMAN CODES-----
-0000: assim || 0001: sistema || 0010: melhor || 0011: impacto || 0100: aumento || 0101: desenvolvimento || 0110: informações || 0111: novas || 1000: ti || 1001: implantação || 10100: envolvidos || 10101: causa || 10110: necessidade || 10111: podemos || 1100: segurança || 11010: vez || 11011: integridade || 11100: tempo || 11101: hardware || 1111: utilização || 
----------------------------------------------------------------------------------------
+000: informações || 001: novas || 010: ti || 011: implantação || 100: segurança || 101: utilização || 1100: aumento || 1101: desenvolvimento || 1110: melhor || 1111: sistema || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input5.txt
 WORD 		 FREQEUNCY
@@ -804,7 +804,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
@@ -818,7 +818,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
@@ -832,7 +832,7 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
@@ -846,46 +846,46 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >processo		    132
 -----BINARY TREE BY LEVEL-----
-problemas: 134 || serviços: 134 || redes: 134 || rede: 134 || pode: 134 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || sistema: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
-problemas: 134 || serviços: 134 || redes: 134 || rede: 134 || pode: 134 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || sistema: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----HUFFMAN CODES-----
-000: utilização || 0010: hardware || 0011: informações || 0100: melhor || 0101: aumento || 0110: dados || 0111: assim || 1000: ti || 1001: implantação || 10100: pode || 10101: serviços || 10110: problemas || 10111: rede || 1100: segurança || 11010: redes || 11011: tempo || 11100: novas || 11101: impacto || 11110: sistema || 11111: desenvolvimento || 
----------------------------------------------------------------------------------------
+000: melhor || 001: aumento || 010: ti || 011: implantação || 100: segurança || 101: utilização || 1100: informações || 1101: hardware || 1110: assim || 1111: dados || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >assim		    201
 -----BINARY TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----HUFFMAN CODES-----
-0000: impacto || 0001: hardware || 001: utilização || 0100: informações || 0101: melhor || 0110: aumento || 0111: ti || 1000: dados || 1001: implantação || 10100: pode || 10101: redes || 1011: segurança || 11000: rede || 11001: serviços || 11010: sentido || 11011: problemas || 11100: sistema || 11101: desenvolvimento || 11110: novas || 11111: tempo || 
----------------------------------------------------------------------------------------
+000: melhor || 001: ti || 010: aumento || 011: implantação || 100: segurança || 1010: novas || 1011: hardware || 110: utilização || 1110: informações || 1111: dados || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >políticas		    67
 -----BINARY TREE BY LEVEL-----
-problemas: 134 || serviços: 134 || redes: 134 || rede: 134 || pode: 134 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || sistema: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
-problemas: 134 || serviços: 134 || redes: 134 || rede: 134 || pode: 134 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || sistema: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----HUFFMAN CODES-----
-000: utilização || 0010: hardware || 0011: informações || 0100: melhor || 0101: aumento || 0110: dados || 0111: assim || 1000: ti || 1001: implantação || 10100: pode || 10101: serviços || 10110: problemas || 10111: rede || 1100: segurança || 11010: redes || 11011: tempo || 11100: novas || 11101: impacto || 11110: sistema || 11111: desenvolvimento || 
----------------------------------------------------------------------------------------
+000: melhor || 001: aumento || 010: ti || 011: implantação || 100: segurança || 101: utilização || 1100: informações || 1101: hardware || 1110: assim || 1111: dados || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
@@ -899,59 +899,59 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >ti		    201
 -----BINARY TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----HUFFMAN CODES-----
-0000: impacto || 0001: hardware || 001: utilização || 0100: informações || 0101: melhor || 0110: assim || 0111: aumento || 1000: dados || 1001: implantação || 10100: rede || 10101: serviços || 1011: segurança || 11000: sentido || 11001: problemas || 11010: pode || 11011: redes || 11100: novas || 11101: tempo || 11110: sistema || 11111: desenvolvimento || 
----------------------------------------------------------------------------------------
+000: melhor || 001: aumento || 010: assim || 011: implantação || 100: segurança || 1010: novas || 1011: hardware || 110: utilização || 1110: informações || 1111: dados || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >segurança		    268
 -----BINARY TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || utilização: 400 || 
 
 -----HUFFMAN CODES-----
-0000: impacto || 0001: hardware || 001: utilização || 0100: informações || 0101: melhor || 0110: ti || 0111: dados || 1000: assim || 1001: aumento || 1010: implantação || 10110: sentido || 10111: problemas || 11000: pode || 11001: redes || 11010: rede || 11011: serviços || 11100: novas || 11101: tempo || 11110: sistema || 11111: desenvolvimento || 
----------------------------------------------------------------------------------------
+000: ti || 001: assim || 010: melhor || 011: aumento || 100: implantação || 1010: novas || 1011: hardware || 110: utilização || 1110: informações || 1111: dados || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >utilização		    400
 -----BINARY TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || 
 
 -----AVL TREE BY LEVEL-----
-sentido: 134 || problemas: 134 || serviços: 134 || rede: 134 || redes: 134 || pode: 134 || sistema: 199 || tempo: 199 || desenvolvimento: 199 || impacto: 199 || novas: 199 || informações: 200 || hardware: 200 || dados: 201 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || dados: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || 
 
 -----HUFFMAN CODES-----
-0000: sistema || 0001: desenvolvimento || 0010: impacto || 0011: hardware || 0100: informações || 0101: melhor || 0110: ti || 0111: dados || 1000: assim || 1001: aumento || 1010: implantação || 10110: sentido || 10111: problemas || 1100: segurança || 11010: pode || 11011: redes || 11100: rede || 11101: serviços || 11110: novas || 11111: tempo || 
----------------------------------------------------------------------------------------
+000: ti || 001: assim || 010: aumento || 011: melhor || 100: implantação || 101: segurança || 1100: novas || 1101: hardware || 1110: informações || 1111: dados || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
 >dados		    201
 -----BINARY TREE BY LEVEL-----
-sentido: 134 || redes: 134 || problemas: 134 || serviços: 134 || rede: 134 || pode: 134 || tempo: 199 || sistema: 199 || impacto: 199 || novas: 199 || desenvolvimento: 199 || informações: 200 || hardware: 200 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----AVL TREE BY LEVEL-----
-sentido: 134 || redes: 134 || problemas: 134 || serviços: 134 || rede: 134 || pode: 134 || tempo: 199 || sistema: 199 || impacto: 199 || novas: 199 || desenvolvimento: 199 || informações: 200 || hardware: 200 || assim: 201 || ti: 201 || aumento: 201 || melhor: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
+novas: 199 || informações: 200 || hardware: 200 || assim: 201 || melhor: 201 || ti: 201 || aumento: 201 || implantação: 267 || segurança: 268 || utilização: 400 || 
 
 -----HUFFMAN CODES-----
-0000: impacto || 0001: hardware || 001: utilização || 0100: informações || 0101: melhor || 0110: aumento || 0111: assim || 1000: ti || 1001: implantação || 10100: sentido || 10101: problemas || 10110: rede || 10111: serviços || 1100: segurança || 11010: pode || 11011: redes || 11100: tempo || 11101: novas || 11110: sistema || 11111: desenvolvimento || 
----------------------------------------------------------------------------------------
+000: aumento || 001: assim || 010: ti || 011: implantação || 100: segurança || 1010: novas || 1011: hardware || 110: utilização || 1110: informações || 1111: melhor || 
+-----------------------------------------------------------------------------------------------------------------------
 
 FILE: data/input6.txt
 WORD 		 FREQEUNCY
@@ -965,5 +965,5 @@ THIS WORD DOESN'T EXIST IN THIS FILE
 
 -----HUFFMAN CODES-----
 		NULL
----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 

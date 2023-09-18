@@ -17,7 +17,7 @@ Sendo assim ao final dessa atividade teremos um algoritmo que realiza as operaç
 - [✔️] Realiza a montagem de arvores binárias, AVL e codificação de Huffman
 
 Neste programa foi feita a utlização de bibliotecas como `<unordered_map>` que é estrutura propria da linguagem C++ que serve para a utilização da montagem da tabela hash, sendo possivel mais informações sobre essa biblioteca clicando no link a seguir: [<unordered_map>](https://cplusplus.com/reference/unordered_map/unordered_map/) <br>
-Foi utlizado tambem expressões regulares como `<regex>` e para a manipulação dos textos lidos, mais informações de sua utlização e seu funcionamento basta acessar o link a seguir: [<regex>](https://cplusplus.com/reference/regex/basic_regex/) 
+Foi utlizado tambem expressões regulares como `<regex>` e para a manipulação dos textos lidos, mais informações de sua utlização e seu funcionamento basta acessar o link a seguir: [regex](https://cplusplus.com/reference/regex/basic_regex/) <br>
 
 
 
@@ -104,7 +104,7 @@ Alem das estruturas utilizadas pela atividade [Top K Itens](https://github.com/J
 
 <details>
 <summary><h2>Priority_queue</h2></summary>
-Em resumo, a <priority_queue> em C++ é uma estrutura de dados que permite organizar elementos de acordo com sua prioridade, com base em um heap binário subjacente, tornando fácil e eficiente o acesso ao elemento de maior prioridade. Sua implementação interna é abstraída para o usuário, facilitando o uso dessa estrutura em algoritmos e aplicações que requerem ordenação por prioridade.
+Em resumo, a priority_queue em C++ é uma estrutura de dados que permite organizar elementos de acordo com sua prioridade, com base em um heap binário subjacente, tornando fácil e eficiente o acesso ao elemento de maior prioridade. Sua implementação interna é abstraída para o usuário, facilitando o uso dessa estrutura em algoritmos e aplicações que requerem ordenação por prioridade.
 <div align="center">
   <img src="imgs/priority-queue.png" alt="priority-queue" width="500px">
   <p align="center"><em> Exemplificação ddo priority-queue </em></p>
@@ -133,7 +133,7 @@ Esse processo de atribuição de códigos é repetido até chegarmos a um nó fo
 
 
 ## 🕗 Tempo:
-Os tempos obtidos foram em nanosegundos visto que sua implementação se deu muito rapida, com isso foi possivel obter o valor de numero para a montagem das arvores AVL, binarias e codigo huffman, a que apresentou melhores resultados foi a arovre binaria com um tempo medio de : XXXXX, esse tempo foi medido atraves de 10 compilações do programa, o motivo de ela ter sido mais rapida de todas esta diretamente ligado ao fato da forma como os dados estão sendo inseridos visto que a arovre binaria se encontra muito desequilibrada e não realiza rotações, por mais que a AVL tenha gasto nanosegundos a mais sua eficiencia é garantida principalmnte nas operações de busca remoção, algo que pela binaria não ocorre muito bem. O codigo huffman foi o mais demorado em relação aos outros e isso se da tambem devido a como é realizado sua montagem, levando à uma piora no quesito tempo.
+Os tempos obtidos foram em nanosegundos visto que sua implementação se deu muito rapida, com isso foi possivel obter o valor de numero para a montagem das arvores AVL, binarias e codigo huffman, a que apresentou melhores resultados foi a arovre binaria com um tempo medio de : 1690 nanosegundos, esse tempo foi medido atraves de 3 compilações do programa, o motivo de ela ter sido mais rapida de todas esta diretamente ligado ao fato da forma como os dados estão sendo inseridos visto que a arovre binaria se encontra muito desequilibrada e não realiza rotações, por mais que a AVL tenha gasto nanosegundos a mais, seu tempo medio foi de: 3470 nanosegundos, sua eficiencia é garantida principalmnte nas operações de busca remoção, algo que pela binaria não ocorre muito bem. O codigo huffman foi o mais demorado em relação aos outros, com um tempo medio de 176200 nanosegundos e isso se da tambem devido a como é realizado sua montagem, levando à uma piora no quesito tempo.
 
 ## RESULTADOS E ANÁLISE
 Antes de procedermos com qualquer análise, é crucial ter em mente que os resultados dos testes podem variar consideravelmente dependendo das máquinas em que o programa é executado. Conforme a intuição sugere, máquinas mais poderosas tendem a produzir resultados superiores.
@@ -147,7 +147,7 @@ O formato de saída dos textos no arquivo `output.data` são realizados da segui
   - OBS: Se quiser imprimir em formato de nivel as árvores AVL e binária, basta comentar a função de impressao na linha 689 e 692 do arquivo `functions.cpp` e descomentar as linhas: 690 e 693 
 
 <div align="center">
-  <img src="imgs/outputNull.png" alt="output" width="500px">
+  <img src="imgs/outputWord.png" alt="output" width="500px">
   <p align="center"><em> Output.data </em></p>
 </div>
 

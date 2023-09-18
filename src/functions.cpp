@@ -35,13 +35,11 @@ void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& g
     }
 
     while(it!=glossary.end()) {
-        //if(it->second.word != word_select){
             WordInfo* current = const_cast<WordInfo*>(&it->second);
             if (current->occurrences > heap[0]->occurrences) {
                 heap[0] = current;
 
                 // Reorganizar o heap usando o afundamento (sink) HEAPIFY
-                //int index = num;
                 int index = 0;
                 int n = num; // Tamanho atual do heap
                 while (true) {
@@ -56,8 +54,6 @@ void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& g
                         smallest = rightChild;
 
                     if (smallest != index) {
-                    // i++;
-                        //cout << "Esse: " << heap[index]->word << ": " << heap[index]->occurrences << " trocou por: " << heap[smallest]->word << ": " << heap[smallest]->occurrences << endl;
                         std::swap(heap[index], heap[smallest]);
                         index = smallest;
                     } else {
@@ -65,7 +61,6 @@ void creatHeap(vector<WordInfo*>& heap, const unordered_map<string, WordInfo>& g
                     }
                 }
             }
-        //}
         ++it;
     }
 
@@ -186,12 +181,20 @@ void callingBuildFunctions(vector<WordInfo*>& newHeap, vector<Node*>&heap_aux, N
 
 
 bool callingBuildFunctionsHuffman(const unordered_map<string, WordInfo>& glossary, string word_select,vector<pair<string, string>> &encHuffman,  priority_queue<Node*, vector<Node*>, Compare> &fifo, vector<Node*>&heap_aux)
-{
+{   
+
+    
+            
     if(glossary.find(word_select) != glossary.end()){
         string code="";
         encHuffman.clear();
         indexHuffman=0;
+        auto start = chrono::high_resolution_clock::now();
         HuffmanCode(heap_aux, fifo, code, encHuffman);
+        auto end = chrono::high_resolution_clock::now();
+
+        auto duration = chrono::duration_cast<chrono::nanoseconds>(end - start);
+        //cout << "Tempo para Codigo huffman: " << duration.count() << " nanossegundos" << endl;
         return 1;
     }
     else return 0;
@@ -492,20 +495,14 @@ void insertTree(Node *&t, WordInfo r){
     }
 
     else if(r.occurrences >= (t)->words.occurrences){
-        //cout << "veio?? 3 " << t->words.word  << "- " << r.word << endl;
       insertTree((t)->right_son, r);
       if ((getWeight((t)->right_son) - getWeight((t)->left_son)) == 2){
-        //cout << "GET HEIGHT 3 " <<  getWeight((t)->right_son) - getWeight((t)->left_son) << endl;
       	if(r.occurrences >= (t)->right_son->words.occurrences){
-            //cout << "entraaa 4" <<  t->words.word << "- " << r.word << endl;
             rotacaoSimplesEsquerda(t);
-            //cout << "saiu 4" << t->words.word << "- " << r.word << endl;
         }
       		
       	else{
-            //cout << "entraaa 5" <<  t->words.word << "- " << r.word << endl;
             rotacaoDuplaEsquerda(t);
-            //cout << "saiuu 5" <<  t->words.word << "- " << r.word << endl;
         }
       }
     }  
